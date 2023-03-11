@@ -1,0 +1,64 @@
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 19% 18%;
+	padding-left: 7%;
+	padding-right: 11%;
+	padding-top: 1%;
+	padding-bottom: 5%;
+	background-color: #d1cece;
+	border-radius: 12px;
+}
+
+.name {
+	width: 200px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.name input {
+	width: 544px;
+	height: 40px;
+	border-radius: 8px;
+}
+
+form span {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+form span label {
+	width: 200px;
+	font-size: 20px;
+	font-weight: 600;
+}
+form span input {
+	width: 242px;
+	height: 40px;
+	border-radius: 8px;
+}
+
+.appointment {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.appointment div {
+	display: flex;
+}
+
+.appointment div label {
+	width: 200px;
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 111px;
+}
+
+.date input {
+	width: 247px;
+	height: 40px;
+	border-radius: 8px;
+}
