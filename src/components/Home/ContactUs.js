@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
+import svg from "./../../assets/icons8-done-64.png";
 
 const ContactUs = () => {
 	const [name, setName] = useState("");
@@ -46,55 +47,78 @@ const ContactUs = () => {
 		});
 	};
 
-	return (
-		<form onSubmit={handleSubmit}>
-			<label className="name">
-				Name
-				<input type="text" value={name} onChange={handleNameChange} />
-			</label>
-			<br />
-			<span>
-				<label>
-					Email Address
-					<input type="email" value={email} onChange={handleEmailChange} />
-				</label>
+	const [isActive, setIsActive] = useState(false);
 
-				<label>
-					Phone Number
-					<input type="tel" value={phone} onChange={handlePhoneChange} />
+	function active() {
+		setIsActive(!isActive);
+	}
+	console.log(active);
+
+	return (
+		<div className="main">
+			<h1 className="contact_heading">Request a Call</h1>
+			<form onSubmit={handleSubmit}>
+				<label className="name">
+					Name
+					<input type="text" value={name} onChange={handleNameChange} />
 				</label>
-			</span>
-			<br />
-			<div className="appointment">
-				<h1>Appointment request</h1>
-				<div>
-					<label className="date">
-						Date
-						<input type="date" value={date} onChange={handleDateChange} />
-					</label>
-					<br />
+				<br />
+				<span>
 					<label>
-						<input
-							type="checkbox"
-							checked={morning}
-							onChange={handleMorningChange}
-						/>
-						Morning
+						Email Address
+						<input type="email" value={email} onChange={handleEmailChange} />
 					</label>
-					<br />
+
 					<label>
-						<input
-							type="checkbox"
-							checked={afternoon}
-							onChange={handleAfternoonChange}
-						/>
-						Afternoon
+						Phone Number
+						<input type="tel" value={phone} onChange={handlePhoneChange} />
 					</label>
+				</span>
+				<br />
+				<div className="appointment">
+					<h1>Appointment request</h1>
+					<div>
+						<label className="date">
+							Date
+							<input type="date" value={date} onChange={handleDateChange} />
+						</label>
+						<br />
+						<div className="checkbox">
+							<label>
+								<input
+									type="checkbox"
+									checked={morning}
+									onChange={handleMorningChange}
+								/>
+								Morning
+							</label>
+
+							<br />
+
+							<label>
+								<input
+									type="checkbox"
+									checked={afternoon}
+									onChange={handleAfternoonChange}
+								/>
+								Afternoon
+							</label>
+						</div>
+					</div>
 				</div>
-			</div>
-			<br />
-			<button type="submit">Request a call</button>
-		</form>
+				<br />
+				<div className="wrapper">
+					<button
+						id="svg"
+						// className={isActive ? "is_active" : ""}
+						className="call_btn"
+						onClick={active}>
+						<span>Request a Call</span>
+						{/* <img src={svg} alt="" /> */}
+					</button>
+				</div>
+			</form>
+		</div>
 	);
 };
 

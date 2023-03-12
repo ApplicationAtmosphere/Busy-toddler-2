@@ -1,6 +1,10 @@
-.App {
+/* .App {
 	font-family: sans-serif;
 	text-align: center;
+} */
+
+.slider_main {
+	margin-top: 261px;
 }
 .slick-track {
 	display: flex;
@@ -21,6 +25,11 @@
 }
 .slick-slide img {
 	display: block;
+	height: 306px;
+	width: 289px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgb(54 64 67 / 30%), 0 4px 8px 3px rgb(54 64 67 / 15%);
+	border: 1px solid #dadce0;
 }
 .slick-list {
 	margin: 0 15px;
@@ -61,16 +70,36 @@
 .product-actions {
 	display: flex;
 	justify-content: space-between;
+	padding: 0px 8%;
+	background-color: #050505;
+	color: #ffffff;
+	border-radius: 7px;
+	align-items: center;
+	padding-bottom: 2%;
 }
-/* .hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-} */
+
 .heading {
 	text-align: center;
 	margin-bottom: 30px;
+	text-decoration: underline;
+}
+
+.slider_btn {
+	width: 100px;
+	height: 37px;
+	border: 3px solid #ee0000;
+	background: #fff;
+	color: #ee0000;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 30px;
+	font-size: 15px;
+}
+
+.slider_btn:hover {
+	background: #ee0000;
+	color: #fff;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.35s;
 }

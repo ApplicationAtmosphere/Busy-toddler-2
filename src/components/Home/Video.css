@@ -1,0 +1,14 @@
+.videoSection {
+	margin-top: 40px;
+}
+.videoSection video {
+	width: 98vw;
+	object-fit: cover;
+	height: 90vh;
+	margin-bottom: 50px;
+}
+
+.video_heading {
+	text-align: center;
+	text-decoration: underline;
+}

@@ -1,13 +1,29 @@
-form {
+.main {
 	display: flex;
 	flex-direction: column;
-	margin: 19% 18%;
+	margin: 5% 18%;
 	padding-left: 7%;
 	padding-right: 11%;
 	padding-top: 1%;
 	padding-bottom: 5%;
-	background-color: #d1cece;
+	margin-right: 12%;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact_heading {
+	text-decoration: underline;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 4%;
+	padding-left: 7%;
+	padding-bottom: 13%;
+	background-color: #fbf5f5;
 	border-radius: 12px;
+	justify-content: space-around;
 }
 
 .name {
@@ -24,7 +40,7 @@ form {
 
 form span {
 	display: flex;
-	justify-content: space-between;
+
 	align-items: center;
 }
 
@@ -32,6 +48,7 @@ form span label {
 	width: 200px;
 	font-size: 20px;
 	font-weight: 600;
+	margin-right: 219px;
 }
 form span input {
 	width: 242px;
@@ -51,7 +68,7 @@ form span input {
 }
 
 .appointment div label {
-	width: 200px;
+	width: 171px;
 	font-size: 20px;
 	font-weight: 600;
 	margin-right: 111px;
@@ -61,4 +78,100 @@ form span input {
 	width: 247px;
 	height: 40px;
 	border-radius: 8px;
+}
+
+.checkbox {
+	margin-top: 30px;
+}
+
+/* button {
+	height: 30px;
+} */
+
+/* body{
+  background: #f4f4f4;
+  height: 100vh;
+} */
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.call_btn {
+	font-family: "Ubuntu", sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 170px;
+	height: 40px;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border: 3px solid #8c82fc;
+	background: #fff;
+	color: #8c82fc;
+	border-radius: 40px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.35s;
+	margin: auto;
+	margin-top: 35px;
+}
+
+.call_btn:hover {
+	background: #8c82fc;
+	color: #fff;
+}
+
+.call_btn span {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.35s;
+}
+
+.success {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border-radius: 50%;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.35s;
+}
+
+.success img {
+	width: 20px;
+	height: 20px;
+	fill: yellowgreen;
+	transform-origin: 50% 50%;
+	transform: translateY(-50%) rotate(0deg) scale(0);
+	transition: all 0.35s;
+}
+
+button.is_active {
+	width: 40px;
+	height: 40px;
+}
+
+button.is_active .success {
+	opacity: 1;
+	visibility: visible;
+}
+
+button.is_active .success svg {
+	margin-top: 50%;
+	transform: translateY(-50%) rotate(720deg) scale(1);
+}
+
+button.is_active span {
+	opacity: 0;
+	visibility: hidden;
 }
