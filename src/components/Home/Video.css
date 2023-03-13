@@ -13,8 +13,18 @@
 
 @media (max-width: 480px) {
 	.video_heading {
-		text-align: center;
-		text-decoration: underline;
 		font-size: 21px;
+	}
+	.videoSection video {
+		height: 60vh;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767) {
+	.video_heading {
+		font-size: 24px;
+	}
+	.videoSection video {
+		height: 70vh;
 	}
 }
