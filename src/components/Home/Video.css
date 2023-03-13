@@ -1,5 +1,5 @@
 .videoSection {
-	margin-top: 40px;
+	margin-top: -40px;
 }
 .videoSection video {
 	width: 98vw;
@@ -11,4 +11,13 @@
 .video_heading {
 	text-align: center;
 	text-decoration: underline;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+	.video_heading {
+		text-align: center;
+		text-decoration: underline;
+		font-size: 21px;
+	}
 }

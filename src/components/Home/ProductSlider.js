@@ -73,7 +73,7 @@ const ProductSlider = () => {
 
 	return (
 		<div className="slider_main">
-			<h1 className="heading">Our Products</h1>
+			<h1 className="product_heading">Our Products</h1>
 			<Slider {...settings}>
 				{slides.map((slide, index) => (
 					<div key={index}>

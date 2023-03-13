@@ -68,33 +68,16 @@ export default function App() {
 							<h6 className="text-center text-uppercase fw-bold mb-4">
 								Say hello
 							</h6>
-							{/* <p>
-								<a href="#!" className="text-reset">
-									Angular
-								</a>
-							</p>
-							<p>
-								<a href="#!" className="text-reset">
-									React
-								</a>
-							</p>
-							<p>
-								<a href="#!" className="text-reset">
-									Vue
-								</a>
-							</p>
-							<p>
-								<a href="#!" className="text-reset">
-									Laravel
-								</a>
-							</p> */}
 
 							<Container className="bg-warning">
 								<Row>
 									<Col>
 										<Form onSubmit={handleSubmit}>
-											<Form.Group className="mb-2" controlId="formName">
+											<Form.Group
+												className="mb-2 bg-warning"
+												controlId="formName">
 												<Form.Control
+													style={{ backgroundColor: "rgb(223 152 0)" }}
 													type="text"
 													placeholder="Enter your name"
 													value={name}
@@ -104,6 +87,7 @@ export default function App() {
 
 											<Form.Group className="mb-2 " controlId="formEmail">
 												<Form.Control
+													style={{ backgroundColor: "rgb(223 152 0)" }}
 													type="email"
 													placeholder="Enter email"
 													value={email}
@@ -113,6 +97,7 @@ export default function App() {
 
 											<Form.Group className="mb-2" controlId="formTelephone">
 												<Form.Control
+													style={{ backgroundColor: "rgb(223 152 0)" }}
 													type="text"
 													placeholder="Enter your telephone number"
 													value={telephone}
@@ -122,8 +107,9 @@ export default function App() {
 
 											<Form.Group className="mb-2" controlId="formComment">
 												<Form.Control
+													style={{ backgroundColor: "rgb(223 152 0)" }}
 													as="textarea"
-													rows={3}
+													rows={2}
 													placeholder="Enter your comment"
 													value={comment}
 													onChange={(e) => setComment(e.target.value)}
@@ -131,7 +117,7 @@ export default function App() {
 											</Form.Group>
 
 											<Button
-												className="mb-2 btn-sm "
+												className="mb-2 btn-sm r-2"
 												variant="primary"
 												type="submit">
 												Submit
@@ -149,9 +135,9 @@ export default function App() {
 								<a href="" className="me-4 text-reset">
 									<MDBIcon fab icon="facebook-f" />
 								</a>
-								<a href="" className="me-4 text-reset">
+								{/* <a href="" className="me-4 text-reset">
 									<MDBIcon fab icon="twitter" />
-								</a>
+								</a> */}
 
 								<a href="" className="me-4 text-reset">
 									<MDBIcon fab icon="instagram" />

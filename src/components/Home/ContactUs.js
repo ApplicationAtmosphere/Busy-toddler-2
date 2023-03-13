@@ -57,7 +57,7 @@ const ContactUs = () => {
 	return (
 		<div className="main">
 			<h1 className="contact_heading">Request a Call</h1>
-			<form onSubmit={handleSubmit}>
+			<form className="contact_form" onSubmit={handleSubmit}>
 				<label className="name">
 					Name
 					<input type="text" value={name} onChange={handleNameChange} />

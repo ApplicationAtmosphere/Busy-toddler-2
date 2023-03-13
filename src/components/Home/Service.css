@@ -6,6 +6,7 @@
 	margin-top: -85px;
 	z-index: 1;
 	position: absolute;
+	width: 100vw;
 }
 
 .service1 {
@@ -18,4 +19,42 @@
 .service1 p {
 	font-size: 18px;
 	font-weight: 600;
+}
+
+@media (max-width: 480px) {
+	.service {
+		margin-top: -23px;
+	}
+
+	.service1 img {
+		width: 52px;
+	}
+	.service1 p {
+		font-size: 9px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.service {
+		margin-top: -23px;
+	}
+
+	.service1 img {
+		width: 63px;
+	}
+	.service1 p {
+		font-size: 10px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.service {
+		margin-top: -25px;
+	}
+
+	.service1 img {
+		width: 96px;
+	}
+	.service1 p {
+		font-size: 14px;
+	}
 }

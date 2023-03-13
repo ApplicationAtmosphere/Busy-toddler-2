@@ -6,9 +6,11 @@ import "./navbar.css";
 const Navbar = () => {
 	return (
 		<nav>
-			<NavLink to="/">Home</NavLink>
+			<NavLink className="navLink" to="/">
+				Home
+			</NavLink>
 			<NavLink to="/whatwedo">WHAT WE DO</NavLink>
-			<img src={logo} alt="" />
+			<img className="logo_img" src={logo} alt="" />
 			<NavLink to="/services">OUR SERVICES</NavLink>
 			<NavLink to="/booknow">BOOK NOW</NavLink>
 		</nav>

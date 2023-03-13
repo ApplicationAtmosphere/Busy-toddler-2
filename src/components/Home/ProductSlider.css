@@ -77,9 +77,10 @@
 	align-items: center;
 	padding-bottom: 2%;
 	margin-right: -2%;
+	display: none;
 }
 
-.heading {
+.product_heading {
 	text-align: center;
 	margin-bottom: 30px;
 	text-decoration: underline;
@@ -113,4 +114,24 @@
 p {
 	margin-top: 18px;
 	margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+	.slider_main {
+		margin-top: 112px;
+	}
+	.product_heading {
+		font-size: 21px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.slider_main {
+		margin-top: 107px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.slider_main {
+		margin-top: 148px;
+	}
 }
