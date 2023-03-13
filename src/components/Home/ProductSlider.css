@@ -123,15 +123,27 @@ p {
 	.product_heading {
 		font-size: 21px;
 	}
+	.slick-slide img {
+		height: 200px;
+		width: 185px;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
 	.slider_main {
 		margin-top: 107px;
 	}
+	.slick-slide img {
+		height: 244px;
+		width: 250px;
+	}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
 	.slider_main {
 		margin-top: 148px;
+	}
+	.slick-slide img {
+		height: 297px;
+		width: 322px;
 	}
 }
