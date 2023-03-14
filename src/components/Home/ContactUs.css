@@ -371,7 +371,7 @@ button.is_active span {
 	.appointment {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		/* align-items: center; */
 	}
 	.appointment div {
 		width: 54vw;
