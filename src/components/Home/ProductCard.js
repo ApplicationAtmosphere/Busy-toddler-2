@@ -7,14 +7,14 @@ const ProductCard = (props) => {
 		<>
 			<Card style={{ width: "inherit" }}>
 				<Card.Img variant="top" src={props.imgSrc} />
-				<Card.Body>
+				<Card>
 					<div className="product-actions">
 						<p>$3000</p>
 						<Link to="/cart">
 							<button className="slider_btn">Rent Now</button>
 						</Link>
 					</div>
-				</Card.Body>
+				</Card>
 			</Card>
 		</>
 	);

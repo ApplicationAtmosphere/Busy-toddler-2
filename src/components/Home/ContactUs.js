@@ -1,6 +1,7 @@
+// import axios from "axios";
 import React, { useState } from "react";
 import "./ContactUs.css";
-import svg from "./../../assets/icons8-done-64.png";
+// import svg from "./../../assets/icons8-done-64.png";
 
 const ContactUs = () => {
 	const [name, setName] = useState("");
@@ -9,6 +10,8 @@ const ContactUs = () => {
 	const [date, setDate] = useState("");
 	const [morning, setMorning] = useState(false);
 	const [afternoon, setAfternoon] = useState(false);
+
+	// const [data, setData] = useState("");
 
 	const handleNameChange = (event) => {
 		setName(event.target.value);
@@ -34,16 +37,31 @@ const ContactUs = () => {
 		setAfternoon(event.target.checked);
 	};
 
-	const handleSubmit = (event) => {
+	const handleSubmit = async (event) => {
 		event.preventDefault();
-		// Send form data to backend or perform some other action
-		console.log({
-			name,
-			email,
-			phone,
-			date,
-			morning,
-			afternoon,
+
+		const data = [[name, email, phone, date, morning, afternoon]];
+		console.log(data);
+		await fetch(
+			"https://v1.nocodeapi.com/vikaskashyap/google_sheets/KpdLorVmOUuqHlts?tabId=sheet1",
+			{
+				method: "POST",
+				headers: {
+					Accept: "application/json",
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(data),
+			}
+		).then((result) => {
+			result.json().then((res) => {
+				console.log(res);
+				setName("");
+				setEmail("");
+				setPhone("");
+				setDate("");
+				setMorning("");
+				setAfternoon("");
+			});
 		});
 	};
 
@@ -52,7 +70,6 @@ const ContactUs = () => {
 	function active() {
 		setIsActive(!isActive);
 	}
-	console.log(active);
 
 	return (
 		<div className="main">
@@ -108,13 +125,8 @@ const ContactUs = () => {
 				</div>
 				<br />
 				<div className="wrapper">
-					<button
-						id="svg"
-						// className={isActive ? "is_active" : ""}
-						className="call_btn"
-						onClick={active}>
+					<button id="svg" className="call_btn" onClick={active}>
 						<span>Request a Call</span>
-						{/* <img src={svg} alt="" /> */}
 					</button>
 				</div>
 			</form>

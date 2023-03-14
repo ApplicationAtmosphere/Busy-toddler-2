@@ -35,7 +35,7 @@ export default function App() {
 			className="text-center text-lg-start text-muted">
 			<section className="">
 				<MDBContainer className="text-center text-md-start mt-5">
-					<MDBCol md="3" lg="4" xl="3" className=" mb-4">
+					<MDBCol md="3" lg="4" xl="3" className="pt-3 mb-4">
 						<h4 className="text-uppercase  fw-bold mb-4">
 							<MDBIcon icon="gem" className="me-3" />
 							Contact Us

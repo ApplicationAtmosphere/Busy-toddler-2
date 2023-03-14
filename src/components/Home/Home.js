@@ -4,7 +4,6 @@ import ProductSlider from "./ProductSlider";
 import Service from "./Service";
 import ContactUs from "./ContactUs";
 import Video from "./Video";
-import Instagram from "./Instagram";
 
 const Home = () => {
 	return (
@@ -14,7 +13,6 @@ const Home = () => {
 			<ProductSlider />
 			<ContactUs />
 			<Video />
-			<Instagram />
 		</div>
 	);
 };
