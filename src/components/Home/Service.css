@@ -21,7 +21,19 @@
 	font-weight: 600;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+	.service {
+		margin-top: -17px;
+	}
+
+	.service1 img {
+		width: 41px;
+	}
+	.service1 p {
+		font-size: 6px;
+	}
+}
+@media (min-width: 320px) and (max-width: 480px) {
 	.service {
 		margin-top: -23px;
 	}
