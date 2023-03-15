@@ -2,11 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 3%;
 	margin-top: -85px;
 	z-index: 1;
 	position: absolute;
-	width: 100vw;
+	width: 98vw;
 }
 
 .service1 {

@@ -1,0 +1,19 @@
+.checkoutProduct {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.checkoutProduct_img {
+	width: 200px;
+	height: 300px;
+	object-fit: contain;
+}
+
+.checkoutProduct_rating {
+	display: flex;
+	width: 100px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
