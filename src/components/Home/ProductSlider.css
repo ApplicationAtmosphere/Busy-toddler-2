@@ -21,10 +21,12 @@
 .slick-slide img {
 	display: block;
 	height: 306px;
-	width: 289px;
+	width: auto;
+	/* width: 250px; */
 	border-radius: 3px;
 	box-shadow: 0 1px 3px rgb(54 64 67 / 30%), 0 4px 8px 3px rgb(54 64 67 / 15%);
 	border: 1px solid #dadce0;
+	object-fit: cover;
 }
 .slick-list {
 	margin: 0 15px;
@@ -36,7 +38,7 @@
 	top: 20%;
 	position: absolute;
 	height: 50px;
-	background: tomato;
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 1;
 	border-radius: 50%;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -48,7 +50,7 @@
 	top: 20%;
 	position: absolute;
 	height: 50px;
-	background: tomato;
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 1;
 	border-radius: 50%;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -71,7 +73,8 @@
 	border-radius: 7px;
 	align-items: center;
 	padding-bottom: 2%;
-	margin-right: -2%;
+	margin-right: 0;
+	border: 1px solid #dadce0;
 }
 
 .product_heading {
@@ -83,9 +86,9 @@
 .slider_btn {
 	width: 100px;
 	height: 37px;
-	border: 3px solid #ee0000;
+	border: 3px solid rgba(0, 0, 0, 0.5);
 	background: #fff;
-	color: #ee0000;
+	color: black;
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 30px;
@@ -93,11 +96,12 @@
 }
 
 .slider_btn:hover {
-	background: #ee0000;
+	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.35s;
+	border: 3px solid #fff;
 }
 
 .product-actions p {
@@ -110,7 +114,7 @@
 	padding: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
 	.slider_main {
 		margin-top: 112px;
 	}
@@ -118,8 +122,24 @@
 		font-size: 21px;
 	}
 	.slick-slide img {
-		height: 200px;
-		width: 185px;
+		height: 150px;
+	}
+	.slider_btn {
+		font-size: 10px;
+		width: 57px;
+		height: 35px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+	.slider_main {
+		margin-top: 119px;
+	}
+	.product_heading {
+		font-size: 21px;
+	}
+	.slick-slide img {
+		height: 165px;
 	}
 	.slider_btn {
 		font-size: 10px;
@@ -134,15 +154,14 @@
 	}
 	.slick-slide img {
 		height: 244px;
-		width: 250px;
 	}
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 767x) and (max-width: 1023px) {
 	.slider_main {
 		margin-top: 148px;
 	}
 	.slick-slide img {
 		height: 297px;
-		width: 322px;
+		width: auto;
 	}
 }

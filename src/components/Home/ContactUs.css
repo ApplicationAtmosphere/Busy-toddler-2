@@ -254,6 +254,11 @@ button.is_active span {
 		align-items: flex-start;
 	}
 
+	.checkbox label {
+		display: flex;
+		align-items: center;
+	}
+
 	.checkbox label input {
 		height: 40px;
 		margin-right: 10px;
@@ -272,7 +277,7 @@ button.is_active span {
 	.contact_heading {
 		text-align: start;
 		text-decoration: underline;
-		font-size: 24px;
+		font-size: 23px;
 	}
 	.main {
 		display: flex;
@@ -299,9 +304,6 @@ button.is_active span {
 	}
 
 	.contact_form label {
-		font-size: 16px;
-	}
-	.appointment div label {
 		font-size: 16px;
 	}
 
@@ -346,6 +348,14 @@ button.is_active span {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+	}
+	.appointment div label {
+		font-size: 16px;
+	}
+
+	.checkbox label {
+		display: flex;
+		align-items: center;
 	}
 
 	.checkbox label input {
@@ -437,8 +447,9 @@ button.is_active span {
 		margin-top: 13px;
 	}
 
-	.checkbox label input {
-		/* margin-right: 10px; */
+	.checkbox label {
+		display: flex;
+		align-items: center;
 	}
 }
 @media (min-width: 768px) and (max-width: 1023px) {

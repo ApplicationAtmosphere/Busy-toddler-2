@@ -73,7 +73,7 @@ const ContactUs = () => {
 
 	return (
 		<div className="main">
-			<h1 className="contact_heading">Request a Call</h1>
+			<h1 className="contact_heading">REQUEST A CALL</h1>
 			<form className="contact_form" onSubmit={handleSubmit}>
 				<label className="name">
 					Name

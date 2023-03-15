@@ -31,8 +31,11 @@ export default function App() {
 
 	return (
 		<MDBFooter
-			bgColor="warning"
-			className="text-center text-lg-start text-muted">
+			style={{
+				backgroundColor: "#F86F15",
+				color: "#fff",
+			}}
+			className="text-center text-lg-start text-light">
 			<section className="">
 				<MDBContainer className="text-center text-md-start mt-5">
 					<MDBCol md="3" lg="4" xl="3" className="pt-3 mb-4">
@@ -69,15 +72,16 @@ export default function App() {
 								Say hello
 							</h6>
 
-							<Container className="bg-warning">
+							<Container>
 								<Row>
 									<Col>
 										<Form onSubmit={handleSubmit}>
-											<Form.Group
-												className="mb-2 bg-warning"
-												controlId="formName">
+											<Form.Group className="mb-2 " controlId="formName">
 												<Form.Control
-													style={{ backgroundColor: "rgb(223 152 0)" }}
+													style={{
+														backgroundColor: "rgba(0, 0, 0, 0.05)",
+														border: "none",
+													}}
 													type="text"
 													placeholder="Enter your name"
 													value={name}
@@ -87,7 +91,10 @@ export default function App() {
 
 											<Form.Group className="mb-2 " controlId="formEmail">
 												<Form.Control
-													style={{ backgroundColor: "rgb(223 152 0)" }}
+													style={{
+														backgroundColor: "rgba(0, 0, 0, 0.05)",
+														border: "none",
+													}}
 													type="email"
 													placeholder="Enter email"
 													value={email}
@@ -97,7 +104,10 @@ export default function App() {
 
 											<Form.Group className="mb-2" controlId="formTelephone">
 												<Form.Control
-													style={{ backgroundColor: "rgb(223 152 0)" }}
+													style={{
+														backgroundColor: "rgba(0, 0, 0, 0.05)",
+														border: "none",
+													}}
 													type="text"
 													placeholder="Enter your telephone number"
 													value={telephone}
@@ -107,7 +117,10 @@ export default function App() {
 
 											<Form.Group className="mb-2" controlId="formComment">
 												<Form.Control
-													style={{ backgroundColor: "rgb(223 152 0)" }}
+													style={{
+														backgroundColor: "rgba(0, 0, 0, 0.05)",
+														border: "none",
+													}}
 													as="textarea"
 													rows={2}
 													placeholder="Enter your comment"
@@ -132,14 +145,11 @@ export default function App() {
 							<h6 className="text-uppercase fw-bold mb-4">Keep Connected</h6>
 
 							<div className="">
-								<a href="" className="me-4 text-reset">
+								<a href="" className="me-1 text-reset">
 									<MDBIcon fab icon="facebook-f" />
 								</a>
-								{/* <a href="" className="me-4 text-reset">
-									<MDBIcon fab icon="twitter" />
-								</a> */}
 
-								<a href="" className="me-4 text-reset">
+								<a href="" className="me-1 text-reset">
 									<MDBIcon fab icon="instagram" />
 								</a>
 							</div>
