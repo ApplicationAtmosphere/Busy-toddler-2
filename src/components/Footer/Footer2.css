@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333330;
+	height: 66vh;
+	color: yellow;
+	padding: 0 6%;
+}
+
+.logoImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+}
+
+.logoImg img {
+	margin-top: -60px;
+	width: 200px;
+}
+
+.footer_middlepart {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 1% 3%;
+}
+
+.footer_middlepart h4 {
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	margin-bottom: 34px;
+}
+
+.socialMediaLogos {
+	/* margin-top: 100px; */
+	margin-bottom: 20px;
+	display: flex;
+	align-self: center;
+}
+
+.socialMediaLogos img {
+	margin-left: 15px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.footer_middlepart p {
+	letter-spacing: 3px;
+}
+.contact_us_btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	margin-top: -17px;
+}
+
+.contact_us_btn p {
+	margin: 0;
+	width: 200px;
+	font-size: 49px;
+	font-weight: 400;
+	font-family: "Libre Baskerville", serif;
+}
+.contact_us_btn p h2 {
+	margin: 0;
+	font-size: 49px;
+	margin-left: -49px;
+}
+
+.contact_us_btn button {
+	margin-top: 30px;
+	background-color: #cdcd05;
+	color: #333330;
+	padding: 1% 14%;
+	word-spacing: 2px;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+.contact_us_btn button:hover {
+	border: 2px solid #cdcd05;
+	background-color: #333330;
+	color: #cdcd05;
+}
+
+@media (max-width: 320px) {
+	.footer {
+		width: 100vw;
+		height: 98vh;
+		flex-direction: column;
+	}
+	.logoImg img {
+		margin-top: 18px;
+		width: 155px;
+	}
+	.footer_middlepart {
+		padding: 1% 0;
+	}
+	.footer_middlepart h4 {
+		margin-bottom: 0;
+		font-size: 9px;
+	}
+
+	.socialMediaLogos {
+		margin-top: 11px;
+	}
+
+	.socialMediaLogos img {
+		width: 30px;
+	}
+
+	.footer_middlepart p {
+		font-size: 10px;
+	}
+
+	.contact_us_btn button {
+		font-size: 10px;
+	}
+	.contact_us_btn p h2 {
+		margin-left: -23px;
+		font-size: 20px;
+	}
+
+	.contact_us_btn p {
+		font-size: 20px;
+	}
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	.footer {
+		width: 100vw;
+		height: 110vh;
+		flex-direction: column;
+	}
+	.logoImg img {
+		margin-top: 18px;
+		width: 180px;
+		height: 158px;
+	}
+	.footer_middlepart {
+		padding: 1% 0;
+	}
+	.footer_middlepart h4 {
+		margin-bottom: 0;
+		font-size: 13px;
+	}
+
+	.socialMediaLogos {
+		margin-top: 11px;
+	}
+
+	.socialMediaLogos img {
+		width: 30px;
+	}
+
+	.footer_middlepart p {
+		font-size: 10px;
+	}
+
+	.contact_us_btn button {
+		margin-top: 18px;
+		font-size: 12px;
+	}
+	.contact_us_btn p h2 {
+		margin-left: -23px;
+		font-size: 20px;
+	}
+
+	.contact_us_btn p {
+		font-size: 20px;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	.footer {
+		width: 100vw;
+		height: 118vh;
+		flex-direction: column;
+	}
+	.logoImg img {
+		margin-top: 18px;
+		width: 180px;
+		height: 158px;
+	}
+	.footer_middlepart {
+		padding: 1% 0;
+	}
+	.footer_middlepart h4 {
+		margin-bottom: 0;
+		font-size: 17px;
+	}
+
+	.socialMediaLogos {
+		margin-top: 11px;
+	}
+
+	.socialMediaLogos img {
+		width: 41px;
+	}
+
+	.footer_middlepart p {
+		font-size: 13px;
+	}
+
+	.contact_us_btn button {
+		margin-top: 18px;
+		font-size: 12px;
+	}
+	.contact_us_btn p h2 {
+		margin-left: -23px;
+		font-size: 25px;
+	}
+
+	.contact_us_btn p {
+		font-size: 25px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.footer {
+		width: 100vw;
+	}
+	.logoImg img {
+		margin-top: 18px;
+		width: 180px;
+		height: 158px;
+	}
+	.footer_middlepart {
+		padding: 1% 6%;
+	}
+	.footer_middlepart h4 {
+		margin-top: 40px;
+		margin-bottom: 0;
+		font-size: 17px;
+	}
+
+	.socialMediaLogos {
+		margin-top: 11px;
+	}
+
+	.socialMediaLogos img {
+		width: 41px;
+	}
+
+	.footer_middlepart p {
+		font-size: 13px;
+	}
+
+	.contact_us_btn button {
+		margin-right: -113px;
+		margin-top: 18px;
+		font-size: 12px;
+	}
+	.contact_us_btn p h2 {
+		margin-left: -23px;
+		font-size: 25px;
+	}
+
+	.contact_us_btn p {
+		text-align: right;
+		font-size: 25px;
+	}
+}

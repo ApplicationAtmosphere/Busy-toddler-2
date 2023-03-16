@@ -6,6 +6,11 @@ const ProductCard = (props) => {
 	return (
 		<>
 			<Card style={{ width: "inherit" }}>
+				<Card>
+					<div className="product_card_heading">
+						<p>RAINBOW TODDLER’S PLAY AREA 1</p>
+					</div>
+				</Card>
 				<Card.Img variant="top" src={props.imgSrc} />
 				<Card>
 					<div className="product-actions">

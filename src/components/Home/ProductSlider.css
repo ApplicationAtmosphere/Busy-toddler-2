@@ -11,6 +11,21 @@
 	margin: 0 auto;
 }
 
+.product_card_heading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #333330;
+	color: white;
+	height: 50px;
+}
+
+.product_card_heading p {
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+}
+
 .slick-slide {
 	padding-right: 10px;
 }
@@ -20,7 +35,7 @@
 }
 .slick-slide img {
 	display: block;
-	height: 306px;
+	height: 262px;
 	width: auto;
 	border-radius: 3px;
 	box-shadow: 0 1px 3px rgb(54 64 67 / 30%), 0 4px 8px 3px rgb(54 64 67 / 15%);
@@ -61,17 +76,16 @@
 .slick-next:focus {
 	color: transparent;
 	outline: none;
-	background: tomato;
+	/* background: tomato; */
 }
 .product-actions {
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 8%;
-	background-color: #050505;
+	background-color: #333330;
 	color: #ffffff;
 	border-radius: 7px;
 	align-items: center;
-	padding-bottom: 2%;
 	margin-right: 0;
 	border: 1px solid #dadce0;
 }
@@ -91,21 +105,22 @@
 	width: 100px;
 	height: 37px;
 	border: 3px solid rgba(0, 0, 0, 0.5);
-	background: #fff;
-	color: black;
+	background: #ffc300;
+	color: #333330;
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 30px;
 	font-size: 15px;
+	font-weight: 500;
 }
 
 .slider_btn:hover {
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
+	background: #333330;
+	color: #ffc300;
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.35s;
-	border: 3px solid #fff;
+	border: 3px solid #ffc300;
 }
 
 .product-actions p {
@@ -133,6 +148,9 @@
 		width: 57px;
 		height: 35px;
 	}
+	.product_card_heading p {
+		font-size: 6px;
+	}
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
@@ -150,6 +168,9 @@
 		width: 72px;
 		height: 35px;
 	}
+	.product_card_heading p {
+		font-size: 8px;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -159,6 +180,9 @@
 	.slick-slide img {
 		height: 244px;
 	}
+	.product_card_heading p {
+		font-size: 11px;
+	}
 }
 @media (min-width: 767x) and (max-width: 1023px) {
 	.slider_main {
@@ -167,5 +191,8 @@
 	.slick-slide img {
 		height: 297px;
 		width: auto;
+	}
+	.product_card_heading p {
+		font-size: 13px;
 	}
 }

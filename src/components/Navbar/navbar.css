@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&display=swap");
+
 nav {
 	width: 98vw;
 	display: flex;
@@ -5,6 +7,7 @@ nav {
 	align-items: center;
 	padding: 0 5%;
 	text-transform: uppercase;
+	font-family: "Andika", sans-serif;
 }
 
 nav img {
@@ -15,8 +18,8 @@ a:-webkit-any-link {
 	color: -webkit-link;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 27px;
-	font-weight: 500;
+	font-size: 24px;
+	font-weight: 700;
 	margin-left: 10px;
 	text-align: center;
 }
@@ -87,7 +90,7 @@ a:-webkit-any-link {
 	}
 
 	a:-webkit-any-link {
-		font-size: 14px;
+		font-size: 11px;
 		margin-left: 10px;
 	}
 }
@@ -100,7 +103,6 @@ a:-webkit-any-link {
 	.navLink {
 		width: 100px;
 		text-align: center;
-		/* margin-left: 10px; */
 	}
 
 	.logo_img {

@@ -36,14 +36,13 @@
 
 @media (max-width: 480px) {
 	.ourPhilosophy {
-		margin-bottom: -203px;
+		margin-bottom: -149px;
 	}
 	.ourPhilosophy_img {
 		height: 50vh;
 	}
 	.ourPhilosophy_img img {
-		width: 307px;
-		height: 243px;
+		width: 186px;
+		height: 183px;
 	}
-	/* thuisfdfsd */
 }
