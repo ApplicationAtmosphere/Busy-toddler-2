@@ -7,6 +7,10 @@ nav {
 	text-transform: uppercase;
 }
 
+nav img {
+	height: 115px;
+}
+
 a:-webkit-any-link {
 	color: -webkit-link;
 	cursor: pointer;
