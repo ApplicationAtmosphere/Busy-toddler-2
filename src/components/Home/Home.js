@@ -3,7 +3,8 @@ import Banner from "./Banner";
 import ProductSlider from "./ProductSlider";
 import Service from "./Service";
 import ContactUs from "./ContactUs";
-import Video from "./Video";
+import OurCreation from "./OurCreation";
+import OurPhilosophy from "./Our Philosophy/OurPhilosophy";
 
 const Home = () => {
 	return (
@@ -12,7 +13,8 @@ const Home = () => {
 			<Service />
 			<ProductSlider />
 			<ContactUs />
-			<Video />
+			<OurPhilosophy />
+			<OurCreation />
 		</div>
 	);
 };

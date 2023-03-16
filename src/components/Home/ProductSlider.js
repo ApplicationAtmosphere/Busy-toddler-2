@@ -10,6 +10,7 @@ import product1 from "./../../assets/product1.jpg";
 import product2 from "./../../assets/product2.jpg";
 import product3 from "./../../assets/product3.JPG";
 import product4 from "./../../assets/product4.JPG";
+import TextUnderline from "./TextUnderline/TextUnderline";
 
 const ProductSlider = () => {
 	const [slides, setSlides] = useState([
@@ -73,7 +74,11 @@ const ProductSlider = () => {
 
 	return (
 		<div className="slider_main">
-			<h1 className="product_heading">OUR PRODUCTS</h1>
+			<div className="product_heading">
+				<h1>OUR PRODUCTS</h1>
+				<TextUnderline />
+			</div>
+
 			<Slider {...settings}>
 				{slides.map((slide, index) => (
 					<div key={index}>

@@ -11,7 +11,7 @@ const Navbar = () => {
 			</NavLink>
 			<NavLink to="/">What we do</NavLink>
 			<img className="logo_img" src={logo} alt="" />
-			<NavLink to="/services">OUR SERVICES</NavLink>
+			<NavLink to="/text">OUR SERVICES</NavLink>
 			<NavLink to="/booknow">BOOK NOW</NavLink>
 		</nav>
 	);

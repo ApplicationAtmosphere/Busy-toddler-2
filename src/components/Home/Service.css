@@ -59,14 +59,14 @@
 }
 @media (min-width: 767px) and (max-width: 1023px) {
 	.service {
-		margin-top: -40px;
+		margin-top: -45px;
 	}
 
 	.service1 img {
 		width: 96px;
 	}
 	.service1 p {
-		font-size: 12px;
+		font-size: 13px;
 	}
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -83,13 +83,13 @@
 }
 @media (min-width: 1201px) and (max-width: 1449px) {
 	.service {
-		margin-top: -55px;
+		margin-top: -65px;
 	}
 
 	.service1 img {
 		width: 143px;
 	}
 	.service1 p {
-		font-size: 25px;
+		font-size: 20px;
 	}
 }

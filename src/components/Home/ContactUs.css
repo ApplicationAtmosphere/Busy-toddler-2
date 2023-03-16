@@ -12,8 +12,16 @@
 }
 
 .contact_heading {
-	margin-bottom: 15px;
-	text-decoration: underline;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.contact_heading h1 {
+	word-spacing: 4px;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 .contact_form {
@@ -180,7 +188,6 @@ button.is_active span {
 @media (max-width: 320px) {
 	.contact_heading {
 		text-align: start;
-		text-decoration: underline;
 		font-size: 18px;
 	}
 	.main {
@@ -276,7 +283,6 @@ button.is_active span {
 @media (min-width: 321px) and (max-width: 480px) {
 	.contact_heading {
 		text-align: start;
-		text-decoration: underline;
 		font-size: 23px;
 	}
 	.main {

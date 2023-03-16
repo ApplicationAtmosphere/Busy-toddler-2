@@ -1,6 +1,7 @@
 // import axios from "axios";
 import React, { useState } from "react";
 import "./ContactUs.css";
+import TextUnderline from "./TextUnderline/TextUnderline";
 // import svg from "./../../assets/icons8-done-64.png";
 
 const ContactUs = () => {
@@ -73,7 +74,10 @@ const ContactUs = () => {
 
 	return (
 		<div className="main">
-			<h1 className="contact_heading">REQUEST A CALL</h1>
+			<div className="contact_heading">
+				<h1>SPEAK ON CALL</h1>
+				<TextUnderline />
+			</div>
 			<form className="contact_form" onSubmit={handleSubmit}>
 				<label className="name">
 					Name
