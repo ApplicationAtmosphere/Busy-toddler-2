@@ -1,11 +1,11 @@
 .service {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	margin-top: -85px;
 	z-index: 1;
 	position: absolute;
-	width: 98vw;
+	width: 100vw;
 }
 
 .service1 {
