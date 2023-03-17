@@ -458,7 +458,7 @@ button.is_active span {
 		align-items: center;
 	}
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
 	.contact_form {
 		width: 93vw;
 		padding-bottom: 31%;

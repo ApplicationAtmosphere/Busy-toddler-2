@@ -166,7 +166,6 @@
 
 	.socialMediaLogos {
 		margin: 10px;
-		/* margin-top: 11px; */
 	}
 
 	.socialMediaLogos img {
@@ -194,7 +193,7 @@
 		height: 69px;
 	}
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
 	.footer {
 		width: 100vw;
 		padding: 0;
@@ -216,7 +215,6 @@
 
 	.socialMediaLogos {
 		margin: 10px;
-		/* margin-top: 11px; */
 	}
 
 	.socialMediaLogos img {
@@ -246,12 +244,14 @@
 		margin-bottom: 18px;
 	}
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
 	.footer {
 		width: 100vw;
+		padding-left: 5%;
+		padding-top: 1%;
 	}
 	.logoImg img {
-		margin-top: 18px;
+		margin-top: -50px;
 		width: 180px;
 		height: 158px;
 	}
@@ -261,7 +261,7 @@
 	.footer_middlepart h4 {
 		margin-top: 40px;
 		margin-bottom: 0;
-		font-size: 17px;
+		font-size: 18px;
 	}
 
 	.socialMediaLogos {
@@ -269,25 +269,70 @@
 	}
 
 	.socialMediaLogos img {
-		width: 41px;
+		width: 47px;
 	}
 
 	.footer_middlepart p {
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	.contact_us_btn button {
-		margin-right: -113px;
 		margin-top: 18px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.contact_us_btn p h2 {
 		margin-left: -23px;
-		font-size: 25px;
+		font-size: 32px;
 	}
 
 	.contact_us_btn p {
-		text-align: right;
-		font-size: 25px;
+		font-size: 32px;
+		text-align: center;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1449px) {
+	.footer {
+		width: 100vw;
+		padding-left: 5%;
+		padding-top: 1%;
+	}
+	.logoImg img {
+		margin-top: -50px;
+		width: auto;
+		height: 168px;
+	}
+	.footer_middlepart {
+		padding: 1% 6%;
+	}
+	.footer_middlepart h4 {
+		margin-top: 40px;
+		margin-bottom: 17px;
+		font-size: 22px;
+	}
+
+	.socialMediaLogos {
+		margin-top: 11px;
+	}
+
+	.socialMediaLogos img {
+		width: 50px;
+	}
+
+	.footer_middlepart p {
+		font-size: 15px;
+	}
+
+	.contact_us_btn button {
+		margin-top: 18px;
+		font-size: 17px;
+	}
+	.contact_us_btn p h2 {
+		margin-left: -53px;
+		font-size: 36px;
+	}
+
+	.contact_us_btn p {
+		font-size: 36px;
+		text-align: center;
 	}
 }
