@@ -5,9 +5,8 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: #333330;
-	height: 66vh;
-	color: yellow;
-	padding: 0 6%;
+	color: #dada2e;
+	padding: 4% 3%;
 }
 
 .logoImg {
@@ -33,13 +32,12 @@
 }
 
 .footer_middlepart h4 {
-	letter-spacing: 1px;
-	word-spacing: 2px;
-	margin-bottom: 34px;
+	margin-top: 18px;
+	text-align: center;
+	margin-bottom: 21px;
 }
 
 .socialMediaLogos {
-	/* margin-top: 100px; */
 	margin-bottom: 20px;
 	display: flex;
 	align-self: center;
@@ -69,6 +67,8 @@
 	font-size: 49px;
 	font-weight: 400;
 	font-family: "Libre Baskerville", serif;
+	text-align: right;
+	margin-top: 19px;
 }
 .contact_us_btn p h2 {
 	margin: 0;
@@ -97,23 +97,26 @@
 @media (max-width: 320px) {
 	.footer {
 		width: 100vw;
-		height: 98vh;
+		padding: 0;
+		padding-bottom: 10px;
 		flex-direction: column;
 	}
 	.logoImg img {
 		margin-top: 18px;
-		width: 155px;
+		width: fit-content;
+		height: 110px;
 	}
 	.footer_middlepart {
 		padding: 1% 0;
 	}
 	.footer_middlepart h4 {
 		margin-bottom: 0;
-		font-size: 9px;
+		font-size: 13px;
 	}
 
 	.socialMediaLogos {
-		margin-top: 11px;
+		margin: 10px;
+		/* margin-top: 11px; */
 	}
 
 	.socialMediaLogos img {
@@ -121,11 +124,14 @@
 	}
 
 	.footer_middlepart p {
+		margin-bottom: 5px;
 		font-size: 10px;
 	}
 
 	.contact_us_btn button {
+		margin-top: 18px;
 		font-size: 10px;
+		margin-bottom: 0;
 	}
 	.contact_us_btn p h2 {
 		margin-left: -23px;
@@ -133,19 +139,22 @@
 	}
 
 	.contact_us_btn p {
+		width: 79px;
 		font-size: 20px;
+		height: 69px;
 	}
 }
 @media (min-width: 320px) and (max-width: 480px) {
 	.footer {
 		width: 100vw;
-		height: 110vh;
+		padding: 0;
+		padding-bottom: 10px;
 		flex-direction: column;
 	}
 	.logoImg img {
 		margin-top: 18px;
-		width: 180px;
-		height: 158px;
+		width: fit-content;
+		height: 110px;
 	}
 	.footer_middlepart {
 		padding: 1% 0;
@@ -156,7 +165,8 @@
 	}
 
 	.socialMediaLogos {
-		margin-top: 11px;
+		margin: 10px;
+		/* margin-top: 11px; */
 	}
 
 	.socialMediaLogos img {
@@ -164,12 +174,14 @@
 	}
 
 	.footer_middlepart p {
+		margin-bottom: 5px;
 		font-size: 10px;
 	}
 
 	.contact_us_btn button {
 		margin-top: 18px;
 		font-size: 12px;
+		margin-bottom: 0;
 	}
 	.contact_us_btn p h2 {
 		margin-left: -23px;
@@ -177,51 +189,61 @@
 	}
 
 	.contact_us_btn p {
+		width: 79px;
 		font-size: 20px;
+		height: 69px;
 	}
 }
 @media (min-width: 481px) and (max-width: 768px) {
 	.footer {
 		width: 100vw;
-		height: 118vh;
+		padding: 0;
+		padding-bottom: 10px;
 		flex-direction: column;
 	}
 	.logoImg img {
 		margin-top: 18px;
-		width: 180px;
-		height: 158px;
+		width: fit-content;
+		height: 125px;
 	}
 	.footer_middlepart {
 		padding: 1% 0;
 	}
 	.footer_middlepart h4 {
 		margin-bottom: 0;
-		font-size: 17px;
+		font-size: 15px;
 	}
 
 	.socialMediaLogos {
-		margin-top: 11px;
+		margin: 10px;
+		/* margin-top: 11px; */
 	}
 
 	.socialMediaLogos img {
-		width: 41px;
+		width: 36px;
 	}
 
 	.footer_middlepart p {
-		font-size: 13px;
+		margin-bottom: 5px;
+		font-size: 10px;
 	}
 
 	.contact_us_btn button {
 		margin-top: 18px;
-		font-size: 12px;
+		font-size: 10px;
+		margin-bottom: 0;
 	}
 	.contact_us_btn p h2 {
-		margin-left: -23px;
-		font-size: 25px;
+		margin-left: -33px;
+		font-size: 24px;
 	}
 
 	.contact_us_btn p {
-		font-size: 25px;
+		width: 118px;
+		font-size: 24px;
+		height: 69px;
+		text-align: center;
+		margin-bottom: 18px;
 	}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
