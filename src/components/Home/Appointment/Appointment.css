@@ -1,0 +1,130 @@
+.main_appointment {
+	margin: 50px 6%;
+}
+
+.all_items {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border: 1px solid black;
+}
+.appointment_heading {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.appointment h5 {
+	margin-top: 6px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.appointment div label {
+	width: 145px;
+}
+.calendar {
+	display: flex;
+	flex-direction: column;
+	padding: 51px 0;
+	margin-bottom: 20px;
+	align-items: flex-end;
+	color: black;
+}
+.calendar_heading {
+	width: 100%;
+	background-color: black;
+	color: yellow;
+	text-align: center;
+	font-size: 24px;
+}
+.react-calendar__navigation button {
+	color: black;
+}
+
+.react-calendar__tile {
+	color: black;
+}
+
+.appointment {
+	padding: 10px;
+	margin-left: -71px;
+	margin-top: -13px;
+}
+
+.appointment h2 {
+	margin-top: 0;
+}
+
+.input {
+	margin-left: 20px;
+	height: 30px;
+}
+
+.label {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 6px 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input,
+button {
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.checkboxes {
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: #d8d82c;
+	color: #000;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	width: 200px;
+	font-size: 20px;
+	border-radius: 20%x;
+}
+
+/* button:hover {
+	background-color: #0069d;
+} */
+
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+	.appointment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.checkboxes {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	label {
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	input,
+	button {
+		width: 100%;
+	}
+}

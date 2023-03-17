@@ -2,9 +2,9 @@ import React from "react";
 import Banner from "./Banner";
 import ProductSlider from "./ProductSlider";
 import Service from "./Service";
-import ContactUs from "./ContactUs";
 import OurCreation from "./OurCreation";
 import OurPhilosophy from "./Our Philosophy/OurPhilosophy";
+import Appointment from "./Appointment/Appointment";
 
 const Home = () => {
 	return (
@@ -12,7 +12,7 @@ const Home = () => {
 			<Banner />
 			<Service />
 			<ProductSlider />
-			<ContactUs />
+			<Appointment />
 			<OurPhilosophy />
 			<OurCreation />
 		</div>
