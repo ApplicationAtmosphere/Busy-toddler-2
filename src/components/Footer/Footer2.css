@@ -103,7 +103,7 @@
 	}
 	.logoImg img {
 		margin-top: 18px;
-		width: fit-content;
+		width: auto;
 		height: 110px;
 	}
 	.footer_middlepart {
@@ -153,7 +153,7 @@
 	}
 	.logoImg img {
 		margin-top: 18px;
-		width: fit-content;
+		width: auto;
 		height: 110px;
 	}
 	.footer_middlepart {
@@ -203,7 +203,7 @@
 	}
 	.logoImg img {
 		margin-top: 18px;
-		width: fit-content;
+		width: auto;
 		height: 125px;
 	}
 	.footer_middlepart {
