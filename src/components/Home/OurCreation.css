@@ -46,7 +46,7 @@
 	}
 
 	.videoSection {
-		margin-bottom: -88px;
+		margin-bottom: -183px;
 	}
 
 	.video {
@@ -59,11 +59,16 @@
 	}
 }
 
-@media (min-width: 481px) and (max-width: 767) {
+@media (min-width: 481px) and (max-width: 767px) {
 	.video_heading {
 		font-size: 24px;
 	}
 	.videoSection video {
 		height: 70vh;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.videoSection {
+		height: 73vh;
 	}
 }

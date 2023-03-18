@@ -36,7 +36,7 @@
 
 @media (max-width: 480px) {
 	.ourPhilosophy {
-		margin-bottom: -149px;
+		margin-bottom: -212px;
 	}
 	.ourPhilosophy_img {
 		height: 50vh;
@@ -44,5 +44,12 @@
 	.ourPhilosophy_img img {
 		width: 186px;
 		height: 183px;
+	}
+}
+/* @media (min-width: 481) and (max-width: 767) {
+} */
+@media (min-width: 767px) and (max-width: 1023px) {
+	.ourPhilosophy {
+		height: 73vh;
 	}
 }

@@ -9,16 +9,16 @@ function Appointment() {
 	const [name, setName] = useState("");
 	const [mobile, setMobile] = useState("");
 	const [email, setEmail] = useState("");
-	const [morningChecked, setMorningChecked] = useState(false);
-	const [afternoonChecked, setAfternoonChecked] = useState(false);
+	const [timeChecked, setTimeChecked] = useState(false);
+	const [selectDate2, setSelectedDate2] = useState(false);
 
 	const handleDateChange = (date) => {
 		setSelectedDate(date);
 	};
 
-	// const handleDateChange = (event) => {
-	// 	setSelectedDate(event.target.value);
-	// };
+	const handleDateChange2 = (date) => {
+		setSelectedDate2(date);
+	};
 
 	const handleNameChange = (event) => {
 		setName(event.target.value);
@@ -32,23 +32,19 @@ function Appointment() {
 		setEmail(event.target.value);
 	};
 
-	const handleMorningCheckboxChange = () => {
-		setMorningChecked(!morningChecked);
-	};
-
-	const handleAfternoonCheckboxChange = () => {
-		setAfternoonChecked(!afternoonChecked);
+	const handleTimeChange = (event) => {
+		setTimeChecked(event.target.value);
 	};
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log({
 			selectedDate,
+			selectDate2,
 			name,
 			mobile,
 			email,
-			morningChecked,
-			afternoonChecked,
+			timeChecked,
 		});
 	};
 
@@ -66,29 +62,29 @@ function Appointment() {
 
 				<div className="appointment">
 					<form onSubmit={handleSubmit}>
-						<label className="label">
+						<label className="text_label">
 							Name:
 							<input
 								type="text"
-								className="input"
+								className="text_input"
 								value={name}
 								onChange={handleNameChange}
 							/>
 						</label>
-						<label className="label">
+						<label className="text_label">
 							Mobile:
 							<input
 								type="tel"
-								className="input"
+								className="text_input_mobile"
 								value={mobile}
 								onChange={handleMobileChange}
 							/>
 						</label>
-						<label className="label">
+						<label className="text_label">
 							Email:
 							<input
 								type="email"
-								className="input"
+								className="text_input"
 								value={email}
 								onChange={handleEmailChange}
 							/>
@@ -99,18 +95,26 @@ function Appointment() {
 							<label>
 								Date:
 								<input
+									className="select_input"
 									type="date"
 									value={mobile}
-									onChange={handleMobileChange}
+									onChange={handleDateChange2}
 								/>
 							</label>
 
 							<label>
 								Time:
-								<input type="time" value={email} onChange={handleEmailChange} />
+								<input
+									className="select_input"
+									type="time"
+									value={email}
+									onChange={handleTimeChange}
+								/>
 							</label>
 						</div>
-						<button type="submit">Let's plan!</button>
+						<button className="appointment_btn" type="submit">
+							Let's plan!
+						</button>
 					</form>
 				</div>
 			</div>
