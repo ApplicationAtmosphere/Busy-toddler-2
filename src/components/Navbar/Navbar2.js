@@ -9,7 +9,7 @@ function Navbar2() {
 		<Navbar
 			className=""
 			// bg="light"
-			expand="lg"
+			expand="md"
 			style={{
 				backgroundColor: "#fff",
 				display: "flex",
