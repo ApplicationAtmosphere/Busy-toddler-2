@@ -182,9 +182,7 @@ function Footer3() {
 				className="text-center p-4 text-light"
 				style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
 				© 2023 Copyright:
-				<a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-					busytoddlerclub.com
-				</a>
+				<p className="text-reset fw-bold">busytoddlerclub.com</p>
 			</div>
 		</MDBFooter>
 	);
