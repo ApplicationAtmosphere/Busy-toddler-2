@@ -75,7 +75,7 @@ function Footer3() {
 						</MDBCol>
 
 						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4 text-center">
-							<h6 className="text-uppercase fw-bold mb-4">Quick links</h6>
+							<h5 className="text-uppercase fw-bold mb-4">Quick links</h5>
 							<p>
 								<Link to="#!" className="text-reset">
 									Angular
@@ -98,7 +98,7 @@ function Footer3() {
 							</p>
 						</MDBCol>
 						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4 text-center">
-							<h6 className="text-uppercase fw-bold mb-4">Categories</h6>
+							<h5 className="text-uppercase fw-bold mb-4">Categories</h5>
 							<p>
 								<Link to="#!" className="text-reset">
 									Angular
@@ -126,7 +126,7 @@ function Footer3() {
 							lg="2"
 							xl="2"
 							className="mx-auto mb-4 mb-md-0 text-center">
-							<h6 className="text-uppercase fw-bold mb-4">Support</h6>
+							<h5 className="text-uppercase fw-bold mb-4">Support</h5>
 							<p>
 								<Link to="#!" className="text-reset">
 									Pricing
@@ -154,7 +154,7 @@ function Footer3() {
 							lg="2"
 							xl="2"
 							className="mx-auto mb-md-0 mb-4 text-center">
-							<h6 className="text-uppercase mb-4 fw-bold ">Contact</h6>
+							<h5 className="text-uppercase mb-4 fw-bold ">Contact</h5>
 							<p>
 								<MDBIcon icon="home" className="me-2" />
 								New York, NY 10012, US
