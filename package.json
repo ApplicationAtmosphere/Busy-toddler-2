@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
     "framer-motion-carousel": "^2.0.1",
+    "gotham-fonts": "^1.0.3",
     "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",

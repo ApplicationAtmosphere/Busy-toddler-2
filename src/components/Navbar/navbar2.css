@@ -1,0 +1,23 @@
+a:-webkit-any-link {
+	color: -webkit-link;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	margin: auto 50px;
+}
+.bg-light {
+	--bs-bg-opacity: 0;
+	background-color: #fff;
+}
+
+nav img {
+	width: 200px;
+	height: 115px;
+	margin: auto;
+}
+
+nav {
+	margin-left: 24px;
+}

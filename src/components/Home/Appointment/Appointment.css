@@ -13,6 +13,7 @@
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	font-weight: normal;
 }
 
 .appointment {
@@ -102,11 +103,11 @@ label {
 }
 
 .appointment_btn {
-	background-color: #d8d82c;
-	color: #000;
+	background-color: #ffc300;
+	color: #333330;
 	border: none;
 	cursor: pointer;
-	font-weight: 600;
+	font-weight: 700;
 	width: 200px;
 	font-size: 20px;
 	border-radius: 25px;

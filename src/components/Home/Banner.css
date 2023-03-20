@@ -9,14 +9,12 @@
 	display: none;
 	content: "";
 	font-weight: 700;
-	font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free";
 	font-size: 1.7rem;
 }
 .carousel-control-next-icon::after {
 	display: none;
 	content: "";
 	font-weight: 700;
-	font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free";
 	font-size: 1.7rem;
 }
 

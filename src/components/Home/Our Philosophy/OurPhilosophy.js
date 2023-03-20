@@ -7,7 +7,7 @@ const OurPhilosophy = () => {
 	return (
 		<div className="ourPhilosophy">
 			<div className="ourPhilosophy_heading">
-				<h1>OUR PHILOSOPHY</h1>
+				<h2>OUR PHILOSOPHY</h2>
 				<TextUnderline />
 			</div>
 			<div className="ourPhilosophy_img">

@@ -16,7 +16,7 @@ const ProductCard = (props) => {
 					<div className="product-actions">
 						<p>$3000</p>
 						<Link to="/booknow">
-							<button className="slider_btn">Rent Now</button>
+							<button className="slider_btn">Book Now</button>
 						</Link>
 					</div>
 				</Card>

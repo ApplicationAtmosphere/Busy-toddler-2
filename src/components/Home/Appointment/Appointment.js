@@ -14,10 +14,23 @@ function Appointment() {
 
 	const handleDateChange = (date) => {
 		setSelectedDate(date);
+		console.log("Selected date:", date);
 	};
 
-	const handleDateChange2 = (date) => {
-		setSelectedDate2(date);
+	const handleDateChange2 = (event) => {
+		const inputDate = new Date(event.target.value);
+		const formattedDate = inputDate.toLocaleDateString();
+		console.log(formattedDate);
+		setSelectedDate2(formattedDate);
+	};
+
+	const handleTimeChange = (event) => {
+		const inputTime = new Date(`1970-01-01T${event.target.value}`);
+		const formattedTime = inputTime.toLocaleTimeString([], {
+			hour: "2-digit",
+			minute: "2-digit",
+		});
+		setTimeChecked(formattedTime);
 	};
 
 	const handleNameChange = (event) => {
@@ -32,26 +45,42 @@ function Appointment() {
 		setEmail(event.target.value);
 	};
 
-	const handleTimeChange = (event) => {
-		setTimeChecked(event.target.value);
-	};
+	console.log(handleTimeChange.time);
 
-	const handleSubmit = (event) => {
+	const handleSubmit = async (event) => {
 		event.preventDefault();
-		console.log({
-			selectedDate,
-			selectDate2,
-			name,
-			mobile,
-			email,
-			timeChecked,
+		const data = [
+			[selectedDate, selectDate2, name, mobile, email, timeChecked],
+		];
+
+		console.log(data);
+		await fetch(
+			"https://v1.nocodeapi.com/vikaskashyap/google_sheets/KpdLorVmOUuqHlts?tabId=sheet1",
+			{
+				method: "POST",
+				headers: {
+					Accept: "application/json",
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(data),
+			}
+		).then((result) => {
+			result.json().then((res) => {
+				console.log(res);
+				setName("");
+				setEmail("");
+				setMobile("");
+				setSelectedDate("");
+				setSelectedDate2("");
+				setTimeChecked("");
+			});
 		});
 	};
 
 	return (
 		<div className="main_appointment">
 			<div className="appointment_heading">
-				<h1>SPEAK ON CALL</h1>
+				<h2>SPEAK ON CALL</h2>
 				<TextUnderline />
 			</div>
 			<div className="all_items">
@@ -72,7 +101,7 @@ function Appointment() {
 							/>
 						</label>
 						<label className="text_label">
-							Mobile:
+							Phone:
 							<input
 								type="tel"
 								className="text_input_mobile"
@@ -97,7 +126,7 @@ function Appointment() {
 								<input
 									className="select_input"
 									type="date"
-									value={mobile}
+									value={selectDate2}
 									onChange={handleDateChange2}
 								/>
 							</label>
@@ -107,7 +136,7 @@ function Appointment() {
 								<input
 									className="select_input"
 									type="time"
-									value={email}
+									value={timeChecked}
 									onChange={handleTimeChange}
 								/>
 							</label>

@@ -65,7 +65,7 @@ const ProductSlider = () => {
 			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 					slidesToScroll: 2,
 				},
 			},
@@ -75,7 +75,7 @@ const ProductSlider = () => {
 	return (
 		<div className="slider_main">
 			<div className="product_heading">
-				<h1>OUR PRODUCTS</h1>
+				<h2>OUR PRODUCTS</h2>
 				<TextUnderline />
 			</div>
 

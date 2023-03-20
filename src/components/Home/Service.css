@@ -17,7 +17,7 @@
 
 .service1 p {
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 @media (max-width: 320px) {

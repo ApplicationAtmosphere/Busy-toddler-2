@@ -8,7 +8,7 @@ const OurCreation = () => {
 	return (
 		<div className="videoSection">
 			<div className="video_heading">
-				<h1>OUR CREATION</h1>
+				<h2>OUR CREATION</h2>
 				<TextUnderline />
 			</div>
 			<div className="video">
