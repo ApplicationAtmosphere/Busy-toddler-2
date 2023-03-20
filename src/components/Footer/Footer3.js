@@ -7,6 +7,9 @@ import {
 	MDBIcon,
 } from "mdb-react-ui-kit";
 import logo from "./../../assets/logo2.jpeg";
+import fb from "./../../assets/icons8-facebook-48.png";
+import insta from "./../../assets/icons8-instagram-48.png";
+import { Link } from "react-router-dom";
 
 function Footer3() {
 	return (
@@ -24,24 +27,24 @@ function Footer3() {
 				</div>
 
 				<div>
-					<a href="" className="me-4 text-reset">
+					<Link to="" className="me-4 text-reset">
 						<MDBIcon fab icon="facebook-f" />
-					</a>
-					<a href="" className="me-4 text-reset">
+					</Link>
+					<Link to="" className="me-4 text-reset">
 						<MDBIcon fab icon="twitter" />
-					</a>
-					<a href="" className="me-4 text-reset">
+					</Link>
+					<Link to="" className="me-4 text-reset">
 						<MDBIcon fab icon="google" />
-					</a>
-					<a href="" className="me-4 text-reset">
+					</Link>
+					<Link to="" className="me-4 text-reset">
 						<MDBIcon fab icon="instagram" />
-					</a>
-					<a href="" className="me-4 text-reset">
+					</Link>
+					<Link to="" className="me-4 text-reset">
 						<MDBIcon fab icon="linkedin" />
-					</a>
-					<a href="" className="me-4 text-reset">
+					</Link>
+					<Link to="" className="me-4 text-reset">
 						<MDBIcon fab icon="github" />
-					</a>
+					</Link>
 				</div>
 			</section> */}
 
@@ -72,59 +75,86 @@ function Footer3() {
 						</MDBCol>
 
 						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4 text-center">
-							<h6 className="text-uppercase fw-bold mb-4">Products</h6>
+							<h6 className="text-uppercase fw-bold mb-4">Quick links</h6>
 							<p>
-								<a href="#!" className="text-reset">
+								<Link to="#!" className="text-reset">
 									Angular
-								</a>
+								</Link>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">
+								<Link to="#!" className="text-reset">
 									React
-								</a>
+								</Link>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">
+								<Link to="#!" className="text-reset">
 									Vue
-								</a>
+								</Link>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">
+								<Link to="#!" className="text-reset">
 									Laravel
-								</a>
+								</Link>
 							</p>
 						</MDBCol>
-
-						<MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4 text-center">
-							<h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4 text-center">
+							<h6 className="text-uppercase fw-bold mb-4">Categories</h6>
 							<p>
-								<a href="#!" className="text-reset">
-									Pricing
-								</a>
+								<Link to="#!" className="text-reset">
+									Angular
+								</Link>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">
-									Settings
-								</a>
+								<Link to="#!" className="text-reset">
+									React
+								</Link>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">
-									Orders
-								</a>
+								<Link to="#!" className="text-reset">
+									Vue
+								</Link>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">
-									Help
-								</a>
+								<Link to="#!" className="text-reset">
+									Laravel
+								</Link>
 							</p>
 						</MDBCol>
 
 						<MDBCol
-							md="4"
-							lg="3"
-							xl="3"
+							md="2"
+							lg="2"
+							xl="2"
+							className="mx-auto mb-4 mb-md-0 text-center">
+							<h6 className="text-uppercase fw-bold mb-4">Support</h6>
+							<p>
+								<Link to="#!" className="text-reset">
+									Pricing
+								</Link>
+							</p>
+							<p>
+								<Link to="#!" className="text-reset">
+									Settings
+								</Link>
+							</p>
+							<p>
+								<Link to="#!" className="text-reset">
+									Orders
+								</Link>
+							</p>
+							<p>
+								<Link to="#!" className="text-reset">
+									Help
+								</Link>
+							</p>
+						</MDBCol>
+
+						<MDBCol
+							md="2"
+							lg="2"
+							xl="2"
 							className="mx-auto mb-md-0 mb-4 text-center">
-							<h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+							<h6 className="text-uppercase mb-4 fw-bold ">Contact</h6>
 							<p>
 								<MDBIcon icon="home" className="me-2" />
 								New York, NY 10012, US
@@ -139,13 +169,17 @@ function Footer3() {
 							<p>
 								<MDBIcon icon="print" className="me-3" /> + 01 234 567 89
 							</p>
+							<div>
+								<img src={fb} alt="fb" />
+								<img src={insta} alt="insta" />
+							</div>
 						</MDBCol>
 					</MDBRow>
 				</MDBContainer>
 			</section>
 
 			<div
-				className="text-center p-4"
+				className="text-center p-4 text-light"
 				style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
 				© 2023 Copyright:
 				<a className="text-reset fw-bold" href="https://mdbootstrap.com/">
