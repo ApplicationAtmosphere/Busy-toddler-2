@@ -8,7 +8,6 @@ function Navbar2() {
 	return (
 		<Navbar
 			className=""
-			// bg="light"
 			expand="md"
 			style={{
 				backgroundColor: "#fff",
