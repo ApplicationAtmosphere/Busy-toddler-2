@@ -21,6 +21,11 @@ nav img {
 nav {
 	margin-left: 24px;
 }
+.lg_img {
+	top: 0;
+	left: 36%;
+	position: absolute;
+}
 
 .navbar-toggler {
 	padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -35,8 +40,13 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-	nav img {
+	.sm_img {
 		display: none;
+	}
+	.lg_img {
+		width: auto;
+		height: 51px;
+		left: -19px;
 	}
 }
 
@@ -45,8 +55,12 @@ nav {
 		padding-right: 0rem;
 		padding-left: 0rem;
 	}
+	.navbar-expand-md .navbar-nav {
+		justify-content: space-between;
+		flex-direction: row;
+	}
 	a:-webkit-any-link {
-		font-size: 10px;
+		font-size: 22px;
 		margin: auto 23px;
 	}
 }

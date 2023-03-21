@@ -17,12 +17,15 @@ function Navbar2() {
 				justifyContent: "space-between",
 			}}>
 			<Container>
+				<Navbar.Brand href="#home">
+					<img className="lg_img" src={logo} alt="logo" />
+				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
+						<Nav.Link href="#home">HOME</Nav.Link>
 						<Nav.Link href="#link">WHAT WE DO </Nav.Link>
-						<img src={logo} alt="logo" />
+						<img className="sm_img" src={logo} alt="logo" />
 						<Nav.Link href="#home">OUR SERVICES </Nav.Link>
 						<Nav.Link href="#link">BOOK NOW </Nav.Link>
 					</Nav>
