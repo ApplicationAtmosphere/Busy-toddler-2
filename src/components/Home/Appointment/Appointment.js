@@ -19,7 +19,8 @@ function Appointment() {
 
 	const handleDateChange2 = (event) => {
 		const inputDate = new Date(event.target.value);
-		const formattedDate = inputDate.toLocaleDateString();
+		const isoDate = inputDate.toISOString();
+		const formattedDate = isoDate.slice(0, 10);
 		console.log(formattedDate);
 		setSelectedDate2(formattedDate);
 	};
