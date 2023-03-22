@@ -1,7 +1,7 @@
 import React from "react";
 import "./OurPhilosophy.css";
 import logoImg from "./../../../assets/logo2.jpeg";
-import TextUnderline from "../TextUnderline/TextUnderline";
+import TextUnderline from "./../../Home/TextUnderline/TextUnderline";
 
 const OurPhilosophy = () => {
 	return (

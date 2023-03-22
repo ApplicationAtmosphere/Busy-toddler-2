@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ContactUs from "./components/Home/ContactUs";
 import Home from "./components/Home/Home";
 // import Navbar from "./components/Navbar/Navbar";
 import Navbar2 from "./components/Navbar/Navbar2";
@@ -17,8 +16,6 @@ const App = () => {
 				<Navbar2 />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/booknow" element={<ContactUs />} />
-					{/* <Route path="/text" element={<TextUnderline />} /> */}
 				</Routes>
 				<Footer />
 			</BrowserRouter>

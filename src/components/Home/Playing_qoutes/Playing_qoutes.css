@@ -1,4 +1,4 @@
-.service {
+.playing_quotes {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -8,89 +8,89 @@
 	/* width: 100vw; */
 }
 
-.service1 {
+.playing_quotes1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
 
-.service1 p {
+.playing_quotes1 p {
 	font-size: 18px;
 	font-weight: 400;
 }
 
 @media (max-width: 320px) {
-	.service {
+	.playing_quotes {
 		margin-top: -17px;
 	}
 
-	.service1 img {
+	.playing_quotes1 img {
 		width: 41px;
 	}
-	.service1 p {
+	.playing_quotes1 p {
 		font-size: 6px;
 	}
 }
 @media (min-width: 320px) and (max-width: 480px) {
-	.service {
+	.playing_quotes {
 		margin-top: -23px;
 	}
 
-	.service1 img {
+	.playing_quotes1 img {
 		width: 52px;
 	}
-	.service1 p {
+	.playing_quotes1 p {
 		font-size: 9px;
 	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-	.service {
+	.playing_quotes {
 		margin-top: -23px;
 	}
 
-	.service1 img {
+	.playing_quotes1 img {
 		width: 63px;
 	}
-	.service1 p {
+	.playing_quotes1 p {
 		font-size: 10px;
 	}
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-	.service {
+	.playing_quotes {
 		width: 97vw;
 		margin-top: -45px;
 	}
 
-	.service1 img {
+	.playing_quotes1 img {
 		width: 96px;
 	}
-	.service1 p {
+	.playing_quotes1 p {
 		font-size: 13px;
 	}
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
-	.service {
+	.playing_quotes {
 		margin-top: -45px;
 	}
 
-	.service1 img {
+	.playing_quotes1 img {
 		width: 110px;
 	}
-	.service1 p {
+	.playing_quotes1 p {
 		font-size: 18px;
 	}
 }
 @media (min-width: 1201px) and (max-width: 1449px) {
-	.service {
+	.playing_quotes {
 		margin-top: -65px;
 	}
 
-	.service1 img {
+	.playing_quotes1 img {
 		width: 143px;
 	}
-	.service1 p {
+	.playing_quotes1 p {
 		font-size: 20px;
 	}
 }

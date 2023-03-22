@@ -1,8 +1,7 @@
 import React from "react";
 import "./OurCreation.css";
-// import video from "./../../assets/video.mp4";
-import playVideoImg from "./../../assets/videoplayimg.jpg";
-import TextUnderline from "./TextUnderline/TextUnderline";
+import playVideoImg from "./../../../assets/videoplayimg.jpg";
+import TextUnderline from "./../../Home/TextUnderline/TextUnderline";
 
 const OurCreation = () => {
 	return (

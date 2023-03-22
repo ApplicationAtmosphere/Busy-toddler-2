@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ProductSlider.css";
 
-import product1 from "./../../assets/product1.jpg";
-import product2 from "./../../assets/product2.jpg";
-import product3 from "./../../assets/product3.JPG";
-import product4 from "./../../assets/product4.JPG";
-import TextUnderline from "./TextUnderline/TextUnderline";
+import product1 from "./../../../assets/product1.jpg";
+import product2 from "./../../../assets/product2.jpg";
+import product3 from "./../../../assets/product3.JPG";
+import product4 from "./../../../assets/product4.JPG";
+import TextUnderline from "../TextUnderline/TextUnderline";
 
 const ProductSlider = () => {
 	const [slides, setSlides] = useState([
