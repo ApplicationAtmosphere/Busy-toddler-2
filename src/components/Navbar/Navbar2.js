@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { NavLink } from "react-router-dom";
 import logo from "./../../assets/logo.png";
 import "./navbar2.css";
 
@@ -22,11 +23,11 @@ function Navbar2() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#home">HOME</Nav.Link>
-						<Nav.Link href="#link">WHAT WE DO </Nav.Link>
+						<NavLink to="/">HOME</NavLink>
+						<NavLink to="/">WHAT WE DO </NavLink>
 						<img className="sm_img" src={logo} alt="logo" />
-						<Nav.Link href="#home">OUR SERVICES </Nav.Link>
-						<Nav.Link href="#link">BOOK NOW </Nav.Link>
+						<NavLink to="/services">OUR SERVICES </NavLink>
+						<NavLink to="/appointment">BOOK NOW </NavLink>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
-// import Navbar from "./components/Navbar/Navbar";
 import Navbar2 from "./components/Navbar/Navbar2";
 import Footer from "./components/Footer/Footer3";
-
-// import TextUnderline from "./components/Home/TextUnderline/TextUnderline";
-// import AllProduct from "./components/AllProducts/AllProduct";
+import Products from "./components/Products/Products";
+import Product from "./components/Products/Product";
+import Cart from "./components/Cart/Cart";
+import Appointment from "./components/Home/Appointment/Appointment";
 
 const App = () => {
 	return (
@@ -16,6 +16,10 @@ const App = () => {
 				<Navbar2 />
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/services" element={<Products />} />
+					<Route path="/products/:id" element={<Product />} />
+					<Route path="/cart" element={<Cart />} />
+					<Route path="/appointment" element={<Appointment />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
