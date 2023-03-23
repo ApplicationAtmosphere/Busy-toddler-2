@@ -100,8 +100,8 @@ const Products = () => {
 											src={product.image}
 											className="card-img-top"
 											alt={product.title}
-											height="550px"
-											width="900px"
+											height="350px"
+											width="300px"
 										/>
 									</NavLink>
 									<div className="card-body">
