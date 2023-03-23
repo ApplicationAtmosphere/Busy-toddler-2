@@ -50,8 +50,8 @@ const Product = () => {
 					<img
 						src={product.image}
 						alt={product.title}
-						height="400px"
-						width="400px"
+						height="300px"
+						width="300px"
 					/>
 				</div>
 				<div className="col-md-6">
