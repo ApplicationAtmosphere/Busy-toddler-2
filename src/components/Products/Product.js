@@ -55,7 +55,7 @@ const Product = () => {
 						src={product.image}
 						alt={product.title}
 						height="550px"
-						width="400px"
+						width="300px"
 					/>
 				</div>
 				<div className="col-md-6">
