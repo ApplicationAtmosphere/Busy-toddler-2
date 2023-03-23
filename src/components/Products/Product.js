@@ -1,33 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addCart } from "../../redux/action";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import { allProducts } from "../../data/products.data";
+import { Button, Badge } from "react-bootstrap";
+import cart from "./../../assets/icons8-shopping-cart.gif";
 
 const Product = () => {
+	const state = useSelector((state) => state.handleCart);
+	console.log(state);
+
 	const { id } = useParams();
 	const item = allProducts.products[id - 1];
 	console.log(item);
 
 	const [product, setProduct] = useState(item);
 	const [loading, setLoading] = useState(false);
+	const [showCart, setShowCart] = useState(false);
 
 	const dispatch = useDispatch();
 	const addProduct = (product) => {
 		dispatch(addCart(product));
+		setShowCart(true);
 	};
-
-	// useEffect(() => {
-	// 	const getProduct = async () => {
-	// 		setLoading(true);
-	// 		const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-	// 		setProduct(await response.json());
-	// 		setLoading(false);
-	// 	};
-	// 	getProduct();
-	// }, []);
+	const handleHideCart = () => {
+		setShowCart(false);
+	};
 
 	const Loading = () => {
 		return (
@@ -59,13 +59,12 @@ const Product = () => {
 					/>
 				</div>
 				<div className="col-md-6">
-					{/* <h4 className="text-uppercase text-black-50">{product.category}</h4> */}
 					<h1 className="display-5">{product.title}</h1>
 					<p className="lead fw-bolder">
 						Rating {product.rating && product.rating.rate}
 						<i className="fa fa-star"></i>
 					</p>
-					<h3 className="display-6 fw-bold my-4">$ {product.price}</h3>
+					<h3 className="display-6 fw-bold my-4">₹ {product.price}</h3>
 					<p className="lead">{product.description}</p>
 					<NavLink to="/cart">
 						<button
@@ -74,10 +73,53 @@ const Product = () => {
 							Book Now
 						</button>
 					</NavLink>
-					{/* <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">
-						Go to Cart
-					</NavLink> */}
+					<NavLink to="">
+						<button
+							className="btn btn-outline-dark px-4 py-2"
+							onClick={() => addProduct(product)}>
+							Add to cart
+						</button>
+					</NavLink>
 				</div>
+				{showCart && (
+					<div
+						style={{
+							position: "fixed",
+							bottom: "1rem",
+							right: "1rem",
+							backgroundColor: "white",
+							border: "1px solid black",
+							padding: "1rem",
+							width: "150px",
+							borderRadius: "12px",
+						}}>
+						<div
+							style={{
+								display: "flex",
+								justifyContent: "space-between",
+								alignItems: "center",
+							}}>
+							<img src={cart} alt="" />
+							<Button
+								style={{
+									marginTop: "-10px",
+									marginTop: "-78px",
+									marginRight: "-24px",
+									borderRadius: "50%",
+									backgroundColor: "#cf0808",
+									color: "black",
+								}}
+								variant="secondary"
+								onClick={handleHideCart}>
+								X
+							</Button>
+						</div>
+						<div style={{ display: "flex", justifyContent: "space-between" }}>
+							<p className="mt-3">Quantity:</p>
+							<h3 className="mt-2">{state.length}</h3>
+						</div>
+					</div>
+				)}
 			</>
 		);
 	};
