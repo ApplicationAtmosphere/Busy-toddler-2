@@ -117,7 +117,7 @@ const Product = () => {
 						</div>
 						<div style={{ display: "flex", justifyContent: "space-between" }}>
 							<p className="mt-3">Quantity:</p>
-							<h3 className="mt-2">{state.length}</h3>
+							<h3 className="mt-3">{state.length}</h3>
 						</div>
 					</div>
 				)}
