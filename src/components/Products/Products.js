@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
+import axios from "axios";
 
 const Products = () => {
 	const [data, setData] = useState([]);
@@ -9,22 +10,28 @@ const Products = () => {
 	let componentMounted = true;
 
 	useEffect(() => {
+		let componentMounted = true;
+
 		const getProducts = async () => {
 			setLoading(true);
-			const response = await fetch("https://fakestoreapi.com/products");
-			if (componentMounted) {
-				setData(await response.clone().json());
-				setFilter(await response.json());
-				setLoading(false);
-				console.log(filter);
+			try {
+				const response = await axios.get("https://fakestoreapi.com/products");
+				if (componentMounted) {
+					setData(response.data);
+					setFilter(response.data);
+					setLoading(false);
+					console.log(filter);
+				}
+			} catch (error) {
+				console.error(error);
 			}
-
-			return () => {
-				componentMounted = false;
-			};
 		};
 
 		getProducts();
+
+		return () => {
+			componentMounted = false;
+		};
 	}, []);
 
 	const Loading = () => {
