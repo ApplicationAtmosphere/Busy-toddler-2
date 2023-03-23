@@ -54,7 +54,7 @@ const Product = () => {
 					<img
 						src={product.image}
 						alt={product.title}
-						height="550px"
+						height="350px"
 						width="300px"
 					/>
 				</div>
