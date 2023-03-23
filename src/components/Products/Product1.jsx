@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addCart } from "./../../../redux/action";
+import { addCart } from "../../redux/action";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
-import axios from "axios";
+import { Button, Badge } from "react-bootstrap";
 
 const Product = () => {
 	const { id } = useParams();
 	const [product, setProduct] = useState([]);
 	const [loading, setLoading] = useState(false);
+	const [showCart, setShowCart] = useState(false);
+	const [cartQuantity, setCartQuantity] = useState(0);
+
+	const handleAddToCart = () => {
+		setCartQuantity(cartQuantity + 1);
+		setShowCart(true);
+	};
+
+	const handleHideCart = () => {
+		setShowCart(false);
+	};
 
 	const dispatch = useDispatch();
 	const addProduct = (product) => {
@@ -18,21 +29,11 @@ const Product = () => {
 
 	useEffect(() => {
 		const getProduct = async () => {
-			try {
-				setLoading(true);
-				const response = await axios.get(
-					`https://fakestoreapi.com/products/${id}`
-				);
-				const data = response.data;
-				setProduct(data);
-				setLoading(false);
-				console.log(data);
-			} catch (err) {
-				console.log(err);
-				setLoading(false);
-			}
+			setLoading(true);
+			const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+			setProduct(await response.json());
+			setLoading(false);
 		};
-
 		getProduct();
 	}, []);
 
@@ -76,12 +77,43 @@ const Product = () => {
 					<p className="lead">{product.description}</p>
 					<button
 						className="btn btn-outline-dark px-4 py-2"
-						onClick={() => addProduct(product)}>
+						onClick={handleAddToCart}>
 						Add to Cart
 					</button>
-					<NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">
-						Go to Cart
+					<NavLink to="/cart">
+						<button
+							className="btn btn-outline-dark px-4 py-2"
+							onClick={() => addProduct(product)}>
+							Go to Cart
+						</button>
 					</NavLink>
+					{showCart && (
+						<div
+							style={{
+								position: "fixed",
+								bottom: "1rem",
+								right: "1rem",
+								backgroundColor: "white",
+								border: "1px solid black",
+								padding: "1rem",
+							}}>
+							<div
+								style={{
+									display: "flex",
+									justifyContent: "space-between",
+									alignItems: "center",
+								}}>
+								<h4>Cart</h4>
+								<Button variant="secondary" onClick={handleHideCart}>
+									X
+								</Button>
+							</div>
+							<div style={{ display: "flex", justifyContent: "space-between" }}>
+								<p>Quantity:</p>
+								<Badge variant="secondary">{cartQuantity}</Badge>
+							</div>
+						</div>
+					)}
 				</div>
 			</>
 		);
