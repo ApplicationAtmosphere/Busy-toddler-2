@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import ProductCard from "./ProductCard";
+import { allProducts } from "../../../data/products.data";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +12,7 @@ import product2 from "./../../../assets/product2.jpg";
 import product3 from "./../../../assets/product3.JPG";
 import product4 from "./../../../assets/product4.JPG";
 import TextUnderline from "../TextUnderline/TextUnderline";
+import { useParams } from "react-router-dom";
 
 const ProductSlider = () => {
 	const [slides, setSlides] = useState([
@@ -36,7 +38,11 @@ const ProductSlider = () => {
 			img: product4,
 		},
 	]);
+	const { id } = useParams();
+	const item = allProducts.products[id - 1];
+	console.log(allProducts);
 
+	const [product, setProduct] = useState(item);
 	const settings = {
 		dots: false,
 		infinite: false,
@@ -80,9 +86,9 @@ const ProductSlider = () => {
 			</div>
 
 			<Slider {...settings}>
-				{slides.map((slide, index) => (
+				{allProducts.products.map((slide, index) => (
 					<div key={index}>
-						<ProductCard imgSrc={slide.img} />
+						<ProductCard imgSrc={slide.image} id={slide.id} />
 					</div>
 				))}
 			</Slider>

@@ -4,10 +4,14 @@ import { addCart } from "../../redux/action";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
+import { allProducts } from "../../data/products.data";
 
 const Product = () => {
 	const { id } = useParams();
-	const [product, setProduct] = useState([]);
+	const item = allProducts.products[id - 1];
+	console.log(item);
+
+	const [product, setProduct] = useState(item);
 	const [loading, setLoading] = useState(false);
 
 	const dispatch = useDispatch();
@@ -15,15 +19,15 @@ const Product = () => {
 		dispatch(addCart(product));
 	};
 
-	useEffect(() => {
-		const getProduct = async () => {
-			setLoading(true);
-			const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-			setProduct(await response.json());
-			setLoading(false);
-		};
-		getProduct();
-	}, []);
+	// useEffect(() => {
+	// 	const getProduct = async () => {
+	// 		setLoading(true);
+	// 		const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+	// 		setProduct(await response.json());
+	// 		setLoading(false);
+	// 	};
+	// 	getProduct();
+	// }, []);
 
 	const Loading = () => {
 		return (
@@ -50,8 +54,8 @@ const Product = () => {
 					<img
 						src={product.image}
 						alt={product.title}
-						height="300px"
-						width="300px"
+						height="550px"
+						width="400px"
 					/>
 				</div>
 				<div className="col-md-6">
@@ -67,7 +71,7 @@ const Product = () => {
 						<button
 							className="btn btn-outline-dark px-4 py-2"
 							onClick={() => addProduct(product)}>
-							Add to Cart
+							Book Now
 						</button>
 					</NavLink>
 					{/* <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">

@@ -48,13 +48,13 @@ const Cart = () => {
 								<button
 									className="btn btn-outline-dark me-4"
 									onClick={() => handleDel(product)}>
-									<i className="fa fa-minus"> - </i>
+									<i className="fa fa-minus"> Remove </i>
 								</button>
-								<button
+								{/* <button
 									className="btn btn-outline-dark"
 									onClick={() => handleAdd(product)}>
 									<i className="fa fa-plus"> + </i>
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>
