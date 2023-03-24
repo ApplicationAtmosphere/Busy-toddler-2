@@ -42,11 +42,12 @@ const Cart = () => {
 							<div className=" col-md-3">
 								<h3>{product.title}</h3>
 								<p className="lead fw-bold">
-									{product.qty} X ${product.price} = $
+									{product.qty} X ₹{product.price} = $
 									{product.qty * product.price}
 								</p>
 								<button
-									className="btn btn-outline-dark me-4"
+									style={{ backgroundColor: "#ffc300" }}
+									className="btn me-4"
 									onClick={() => handleDel(product)}>
 									<i className="fa fa-minus"> Remove </i>
 								</button>
@@ -69,7 +70,8 @@ const Cart = () => {
 					<div className="row">
 						<NavLink
 							to="/checkout"
-							className="btn btn-outline-dark mb-5 w-25 mx-auto">
+							style={{ backgroundColor: "#ffc300" }}
+							className="btn mb-5 w-25 mx-auto">
 							Proceed to Checkout
 						</NavLink>
 					</div>

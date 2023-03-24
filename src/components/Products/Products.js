@@ -48,8 +48,9 @@ const Products = () => {
 									<div className="card-body">
 										<h5 className="card-title mb-2">{product.title}</h5>
 										<NavLink
+											style={{ backgroundColor: "#ffc300" }}
 											to={`/products/${product.id}`}
-											className="btn btn-outline-dark ">
+											className="btn  ">
 											Book Now
 										</NavLink>
 									</div>

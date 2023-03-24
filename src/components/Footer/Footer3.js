@@ -6,7 +6,7 @@ import {
 	MDBCol,
 	MDBIcon,
 } from "mdb-react-ui-kit";
-import logo from "./../../assets/logo2.jpeg";
+import logo from "./../../assets/FINALSYMBOL.png";
 import fb from "./../../assets/icons8-facebook-48.png";
 import insta from "./../../assets/icons8-instagram-48.png";
 import { Link } from "react-router-dom";
