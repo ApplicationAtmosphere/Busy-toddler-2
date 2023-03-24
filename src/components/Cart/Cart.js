@@ -28,15 +28,15 @@ const Cart = () => {
 	const cartItems = (product) => {
 		return (
 			<>
-				<div className="px-4 my-5  rounded-3 py-5">
-					<div className="container py-4">
-						<div className="d-flex flex-column align-items-center justify-content-center">
+				<div className="px-1 my-1 bg-light rounded-3 py-5">
+					<div className="container py-1">
+						<div className="d-flex  align-items-center justify-content-center">
 							<div className="col-md-4 ">
 								<img
 									src={product.image}
 									alt={product.title}
-									height="350px"
-									width="320px"
+									height="200px"
+									width="200px"
 								/>
 							</div>
 							<div className=" col-md-4 mt-3">
@@ -70,13 +70,10 @@ const Cart = () => {
 			<>
 				<div className="container">
 					<div className="d-flex flex-column align-items-center justify-content-center">
-						<NavLink
-							to="/checkout"
-							className="mb-5 mx-auto "
-							style={{ width: "33%" }}>
+						<NavLink to="/checkout" className="mb-5  " style={{}}>
 							<button
 								style={{ backgroundColor: "#ffc300" }}
-								className="btn me-4">
+								className="btn me-4 mx-auto">
 								<i className="fa fa-minus">Checkout </i>
 							</button>
 						</NavLink>

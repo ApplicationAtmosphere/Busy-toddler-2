@@ -5,7 +5,7 @@ import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import { allProducts } from "../../data/products.data";
-import { Button, Badge } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import cart from "./../../assets/icons8-shopping-cart.gif";
 
 const Product = () => {
@@ -18,7 +18,7 @@ const Product = () => {
 
 	const [product, setProduct] = useState(item);
 	const [loading, setLoading] = useState(false);
-	const [showCart, setShowCart] = useState(false);
+	const [showCart, setShowCart] = useState(true);
 
 	const dispatch = useDispatch();
 	const addProduct = (product) => {
@@ -84,45 +84,46 @@ const Product = () => {
 						</button>
 					</NavLink>
 				</div>
-				{showCart && (
+				{/* {showCart || ( */}
+				<div
+					style={{
+						position: "fixed",
+						bottom: "1rem",
+						right: "1rem",
+						backgroundColor: "white",
+						border: "1px solid black",
+						padding: "1rem",
+						width: "150px",
+						borderRadius: "12px",
+						height: "114px",
+					}}>
 					<div
 						style={{
-							position: "fixed",
-							bottom: "1rem",
-							right: "1rem",
-							backgroundColor: "white",
-							border: "1px solid black",
-							padding: "1rem",
-							width: "150px",
-							borderRadius: "12px",
+							display: "flex",
+							justifyContent: "space-between",
+							alignItems: "center",
 						}}>
-						<div
+						<img src={cart} alt="" />
+						<Button
 							style={{
-								display: "flex",
-								justifyContent: "space-between",
-								alignItems: "center",
-							}}>
-							<img src={cart} alt="" />
-							<Button
-								style={{
-									marginTop: "-10px",
-									marginTop: "-78px",
-									marginRight: "-24px",
-									borderRadius: "50%",
-									backgroundColor: "#cf0808",
-									color: "black",
-								}}
-								variant="secondary"
-								onClick={handleHideCart}>
-								X
-							</Button>
-						</div>
-						<div style={{ display: "flex", justifyContent: "space-between" }}>
-							<p className="mt-3">Quantity:</p>
-							<h3 className="mt-3">{state.length}</h3>
-						</div>
+								marginTop: "-10px",
+								marginTop: "-78px",
+								marginRight: "-24px",
+								borderRadius: "50%",
+								backgroundColor: "#cf0808",
+								color: "black",
+							}}
+							variant="secondary"
+							onClick={handleHideCart}>
+							X
+						</Button>
 					</div>
-				)}
+					<div style={{ display: "flex", justifyContent: "space-between" }}>
+						<p className="mt-3">Quantity:</p>
+						<h3 className="mt-3">{state.length}</h3>
+					</div>
+				</div>
+				{/* )} */}
 			</>
 		);
 	};
