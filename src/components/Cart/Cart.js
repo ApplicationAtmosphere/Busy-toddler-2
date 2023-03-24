@@ -30,13 +30,13 @@ const Cart = () => {
 			<>
 				<div className="px-1 my-1 bg-light rounded-3 py-5">
 					<div className="container py-1">
-						<div className="d-flex  align-items-center justify-content-center">
+						<div className="row justify-content-center">
 							<div className="col-md-4 ">
 								<img
 									src={product.image}
 									alt={product.title}
 									height="200px"
-									width="200px"
+									width="180px"
 								/>
 							</div>
 							<div className=" col-md-4 mt-3">
@@ -73,7 +73,7 @@ const Cart = () => {
 						<NavLink to="/checkout" className="mb-5  " style={{}}>
 							<button
 								style={{ backgroundColor: "#ffc300" }}
-								className="btn me-4 mx-auto">
+								className="btn me-4 mx-auto mt-3">
 								<i className="fa fa-minus">Checkout </i>
 							</button>
 						</NavLink>
