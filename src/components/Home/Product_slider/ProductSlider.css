@@ -37,7 +37,7 @@
 .slick-slide img {
 	display: block;
 	height: 262px;
-	width: auto;
+	/* width: auto; */
 	border-radius: 3px;
 	box-shadow: 0 1px 3px rgb(54 64 67 / 30%), 0 4px 8px 3px rgb(54 64 67 / 15%);
 	border: 1px solid #dadce0;

@@ -1,11 +1,11 @@
-a:-webkit-any-link {
+.aTag {
 	color: -webkit-link;
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
-	margin: auto 50px;
+	margin: auto 62px;
 }
 .bg-light {
 	--bs-bg-opacity: 0;
@@ -70,9 +70,9 @@ nav {
 		flex-direction: row;
 	}
 
-	a:-webkit-any-link {
+	.aTag {
 		font-size: 15px;
-		margin: auto 12px;
+		margin: auto 22px;
 	}
 
 	.lg_img {
@@ -80,19 +80,9 @@ nav {
 	}
 }
 @media (min-width: 1024px) and (max-width: 1249px) {
-	/* .navbar-expand-md .navbar-nav .nav-link {
-		padding-right: 0rem;
-		padding-left: 0rem;
-	}*/
-	/* .navbar-expand-md .navbar-nav {
-		justify-content: space-between;
-		flex-direction: row;
-		margin-left: 92px;
-	} */
-
-	a:-webkit-any-link {
+	.aTag {
 		font-size: 15px;
-		margin: auto 28px;
+		margin: auto 44px;
 	}
 	.lg_img {
 		display: none;

@@ -23,11 +23,19 @@ function Navbar2() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<NavLink to="/">HOME</NavLink>
-						<NavLink to="/">WHAT WE DO </NavLink>
+						<NavLink className="aTag" to="/">
+							HOME
+						</NavLink>
+						<NavLink className="aTag" to="/">
+							WHAT WE DO{" "}
+						</NavLink>
 						<img className="sm_img" src={logo} alt="logo" />
-						<NavLink to="/services">OUR SERVICES </NavLink>
-						<NavLink to="/appointment">BOOK NOW </NavLink>
+						<NavLink className="aTag" to="/services">
+							OUR SERVICES{" "}
+						</NavLink>
+						<NavLink className="aTag" to="/appointment">
+							BOOK NOW{" "}
+						</NavLink>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
