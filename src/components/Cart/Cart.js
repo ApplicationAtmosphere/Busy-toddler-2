@@ -30,7 +30,7 @@ const Cart = () => {
 			<>
 				<div className="px-1 my-1 bg-light rounded-3 py-5">
 					<div className="container py-1">
-						<div className="row justify-content-center">
+						<div className="d-flex  align-items-center justify-content-center">
 							<div className="col-md-4 ">
 								<img
 									src={product.image}
@@ -39,7 +39,7 @@ const Cart = () => {
 									width="180px"
 								/>
 							</div>
-							<div className=" col-md-4 mt-3">
+							<div className=" col-md-4 mt-3" style={{ marginLeft: "20px" }}>
 								<h3>{product.title}</h3>
 								<p className="lead fw-bold">
 									{product.qty} X ₹{product.price} = $
@@ -73,7 +73,7 @@ const Cart = () => {
 						<NavLink to="/checkout" className="mb-5  " style={{}}>
 							<button
 								style={{ backgroundColor: "#ffc300" }}
-								className="btn me-4 mx-auto mt-3">
+								className="btn me-4 mx-auto">
 								<i className="fa fa-minus">Checkout </i>
 							</button>
 						</NavLink>
