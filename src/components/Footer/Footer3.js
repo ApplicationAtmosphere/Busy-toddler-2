@@ -19,35 +19,7 @@ function Footer3() {
 				backgroundColor: "black",
 				color: "white",
 			}}
-			// bgColor="light"
 			className="  flex-direction-column text-center text-lg-start text-muted ">
-			{/* <section className="justify-content-center justify-content-lg-between p-4 border-bottom">
-				<div className="me-5 d-none d-lg-block">
-					<span>Get connected with us on social networks:</span>
-				</div>
-
-				<div>
-					<Link to="" className="me-4 text-reset">
-						<MDBIcon fab icon="facebook-f" />
-					</Link>
-					<Link to="" className="me-4 text-reset">
-						<MDBIcon fab icon="twitter" />
-					</Link>
-					<Link to="" className="me-4 text-reset">
-						<MDBIcon fab icon="google" />
-					</Link>
-					<Link to="" className="me-4 text-reset">
-						<MDBIcon fab icon="instagram" />
-					</Link>
-					<Link to="" className="me-4 text-reset">
-						<MDBIcon fab icon="linkedin" />
-					</Link>
-					<Link to="" className="me-4 text-reset">
-						<MDBIcon fab icon="github" />
-					</Link>
-				</div>
-			</section> */}
-
 			<section className="text-light">
 				<MDBContainer className="text-center text-md-start mt-5">
 					<MDBRow className="mt-3">
@@ -77,22 +49,22 @@ function Footer3() {
 						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4 text-center">
 							<h5 className="text-uppercase fw-bold mb-4">Quick links</h5>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Angular
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									React
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Vue
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Laravel
 								</Link>
 							</p>
@@ -100,22 +72,22 @@ function Footer3() {
 						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4 text-center">
 							<h5 className="text-uppercase fw-bold mb-4">Categories</h5>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Angular
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									React
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Vue
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Laravel
 								</Link>
 							</p>
@@ -128,22 +100,22 @@ function Footer3() {
 							className="mx-auto mb-4 mb-md-0 text-center">
 							<h5 className="text-uppercase fw-bold mb-4">Support</h5>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Pricing
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Settings
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Orders
 								</Link>
 							</p>
 							<p>
-								<Link to="#!" className="text-reset">
+								<Link to="#!" className="text-reset text-decoration-none">
 									Help
 								</Link>
 							</p>
