@@ -6,7 +6,7 @@ export const allProducts = {
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
-			image: require("./../assets/products/B12.jpg"),
+			image: require("./../assets/product1.jpg"),
 			rating: { rate: 3.9, count: 120 },
 		},
 		{
@@ -15,7 +15,7 @@ export const allProducts = {
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
-			image: require("./../assets/products/B3.JPG"),
+			image: require("./../assets/product2.jpg"),
 			rating: { rate: 4.1, count: 259 },
 		},
 		{
@@ -24,7 +24,7 @@ export const allProducts = {
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
-			image: require("./../assets/products/BPS1.jpg"),
+			image: require("./../assets/product3.JPG"),
 			rating: { rate: 4.7, count: 500 },
 		},
 		{
@@ -33,7 +33,7 @@ export const allProducts = {
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
-			image: require("./../assets/products/BPS2.jpg"),
+			image: require("./../assets/product4.JPG"),
 			rating: { rate: 2.1, count: 430 },
 		},
 		{
@@ -42,7 +42,7 @@ export const allProducts = {
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
-			image: require("./../assets/products/TPA1.jpg"),
+			image: require("./../assets/product1.jpg"),
 			rating: { rate: 4.6, count: 400 },
 		},
 		{
@@ -51,7 +51,7 @@ export const allProducts = {
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
-			image: require("./../assets/products/TPA2.jpg"),
+			image: require("./../assets/product2.jpg"),
 			rating: { rate: 3.9, count: 70 },
 		},
 		// {
