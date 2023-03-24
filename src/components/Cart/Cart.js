@@ -45,12 +45,14 @@ const Cart = () => {
 									{product.qty} X ₹{product.price} = $
 									{product.qty * product.price}
 								</p>
-								<button
-									style={{ backgroundColor: "#ffc300" }}
-									className="btn me-4"
-									onClick={() => handleDel(product)}>
-									<i className="fa fa-minus"> Remove </i>
-								</button>
+								<div className=" mx-auto">
+									<button
+										style={{ backgroundColor: "#ffc300" }}
+										className="btn me-4 "
+										onClick={() => handleDel(product)}>
+										<i className="fa fa-minus"> Remove </i>
+									</button>
+								</div>
 								{/* <button
 									className="btn btn-outline-dark"
 									onClick={() => handleAdd(product)}>
@@ -67,12 +69,16 @@ const Cart = () => {
 		return (
 			<>
 				<div className="container">
-					<div className="row">
+					<div className="d-flex flex-column align-items-center justify-content-center">
 						<NavLink
 							to="/checkout"
-							style={{ backgroundColor: "#ffc300" }}
-							className="btn mb-5 w-25 mx-auto">
-							Proceed to Checkout
+							className="mb-5 mx-auto "
+							style={{ width: "33%" }}>
+							<button
+								style={{ backgroundColor: "#ffc300" }}
+								className="btn me-4">
+								<i className="fa fa-minus">Checkout </i>
+							</button>
 						</NavLink>
 					</div>
 				</div>

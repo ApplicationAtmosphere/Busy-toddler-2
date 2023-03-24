@@ -10,7 +10,7 @@ const Product = () => {
 	const { id } = useParams();
 	const [product, setProduct] = useState([]);
 	const [loading, setLoading] = useState(false);
-	const [showCart, setShowCart] = useState(false);
+	const [showCart, setShowCart] = useState(true);
 	const [cartQuantity, setCartQuantity] = useState(0);
 
 	const handleAddToCart = () => {
