@@ -76,7 +76,7 @@ const Product = () => {
 					</NavLink>
 					<NavLink to="">
 						<button
-							className="btn btn-outline-dark px-4 py-2 "
+							className="btn btn-outline-dark px-4 py-2 mb-2 "
 							onClick={() => addProduct(product)}>
 							Add to cart
 						</button>
