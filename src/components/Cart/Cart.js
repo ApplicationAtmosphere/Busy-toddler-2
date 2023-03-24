@@ -42,13 +42,13 @@ const Cart = () => {
 							<div className=" col-md-4 mt-3" style={{ marginLeft: "20px" }}>
 								<h3>{product.title}</h3>
 								<p className="lead fw-bold">
-									{product.qty} X ₹{product.price} = $
+									{product.qty} X ₹{product.price} = ₹
 									{product.qty * product.price}
 								</p>
 								<div className=" mx-auto">
 									<button
 										style={{ backgroundColor: "#ffc300" }}
-										className="btn me-4 "
+										className="btn btn-sm me-4 "
 										onClick={() => handleDel(product)}>
 										<i className="fa fa-minus"> Remove </i>
 									</button>

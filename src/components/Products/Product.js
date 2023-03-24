@@ -103,7 +103,9 @@ const Product = () => {
 							justifyContent: "space-between",
 							alignItems: "center",
 						}}>
-						<img src={cart} alt="" />
+						<NavLink to="/cart">
+							<img src={cart} alt="" />
+						</NavLink>
 						<Button
 							style={{
 								marginTop: "-10px",
