@@ -28,18 +28,18 @@ const Cart = () => {
 	const cartItems = (product) => {
 		return (
 			<>
-				<div className=" my-5 bg-light rounded-3 ">
-					<div className="container ">
-						<div className="row justify-content-center align-items-center">
+				<div className="px-4 my-5  rounded-3 py-5">
+					<div className="container py-4">
+						<div className="d-flex flex-column align-items-center justify-content-center">
 							<div className="col-md-4 ">
 								<img
 									src={product.image}
 									alt={product.title}
-									height="300px"
-									width="300px"
+									height="350px"
+									width="320px"
 								/>
 							</div>
-							<div className=" col-md-3">
+							<div className=" col-md-4 mt-3">
 								<h3>{product.title}</h3>
 								<p className="lead fw-bold">
 									{product.qty} X ₹{product.price} = $

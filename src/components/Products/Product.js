@@ -50,15 +50,15 @@ const Product = () => {
 	const ShowProduct = () => {
 		return (
 			<>
-				<div className="col-md-4">
+				<div className="col-md-6">
 					<img
 						src={product.image}
 						alt={product.title}
 						height="350px"
-						width="300px"
+						width="320px"
 					/>
 				</div>
-				<div className="col-md-8">
+				<div className="col-md-6">
 					<h1 className="display-5">{product.title}</h1>
 					<p className="lead fw-bolder">
 						Rating {product.rating && product.rating.rate}
