@@ -1,5 +1,5 @@
 .slider_main {
-	margin-top: 190px;
+	margin-top: 300px;
 }
 .slick-track {
 	display: flex;
@@ -139,14 +139,14 @@
 .t_and_c {
 	margin-top: 20px;
 	text-align: right;
-	margin-right: 18px;
+	margin-right: 32px;
 	font-size: 10px;
 	text-decoration: underline;
 }
 
 @media (max-width: 320px) {
 	.slider_main {
-		margin-top: 112px;
+		margin-top: 160px;
 	}
 	.product_heading {
 		font-size: 21px;
@@ -166,7 +166,7 @@
 
 @media (min-width: 321px) and (max-width: 480px) {
 	.slider_main {
-		margin-top: 119px;
+		margin-top: 180px;
 	}
 	.product_heading {
 		font-size: 21px;
@@ -193,9 +193,9 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-	.slider_main {
+	/* .slider_main {
 		margin-top: 107px;
-	}
+	} */
 	.slick-slide img {
 		height: 244px;
 	}

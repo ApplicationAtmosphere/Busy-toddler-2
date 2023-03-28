@@ -1,10 +1,10 @@
 import React from "react";
 import "./Playing_qoutes.css";
-import icon1 from "./../../../assets/icon1.png";
-import icon2 from "./../../../assets/icon2.png";
-import icon3 from "./../../../assets/icon3.png";
-import icon4 from "./../../../assets/icon4.png";
-import icon5 from "./../../../assets/icon5.png";
+import icon1 from "./../../../assets/1.png";
+import icon2 from "./../../../assets/2.png";
+import icon3 from "./../../../assets/3.png";
+import icon4 from "./../../../assets/4.png";
+import icon5 from "./../../../assets/5.png";
 
 const Playing_qoutes = () => {
 	return (
@@ -25,7 +25,7 @@ const Playing_qoutes = () => {
 				<img src={icon4} alt="icon4" />
 				<p>CHILDREN’S SAFETY IS OUR PRIORITY</p>
 			</div>
-			<div className="playing_quotes1">
+			<div className="icon5">
 				<img src={icon5} alt="icon5" />
 				<p>ONE STOP SHOP FOR PARTY PLANNING</p>
 			</div>

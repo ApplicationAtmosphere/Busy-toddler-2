@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: -85px;
+	margin-top: 40px;
 	z-index: 1;
 	position: absolute;
 	/* width: 100vw; */
@@ -16,51 +16,89 @@
 }
 
 .playing_quotes1 p {
-	font-size: 18px;
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.icon5 img {
+	width: 120px;
+}
+
+.icon5 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.icon5 p {
+	margin-top: 20px;
+	font-size: 15px;
 	font-weight: 400;
 }
 
 @media (max-width: 320px) {
-	.playing_quotes {
-		margin-top: -17px;
-	}
-
 	.playing_quotes1 img {
 		width: 41px;
 	}
 	.playing_quotes1 p {
 		font-size: 6px;
 	}
-}
-@media (min-width: 320px) and (max-width: 480px) {
-	.playing_quotes {
-		margin-top: -23px;
+	.icon5 img {
+		width: 34px;
 	}
 
+	.icon5 p {
+		font-size: 6px;
+	}
+	.playing_quotes {
+		margin-top: 24px;
+	}
+}
+@media (min-width: 320px) and (max-width: 480px) {
 	.playing_quotes1 img {
 		width: 52px;
 	}
 	.playing_quotes1 p {
 		font-size: 9px;
+		margin-top: 10px;
+	}
+	.icon5 img {
+		width: 43px;
+	}
+
+	.icon5 p {
+		font-size: 9px;
+	}
+	.playing_quotes {
+		margin-top: 23px;
 	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-	.playing_quotes {
-		margin-top: -23px;
-	}
-
 	.playing_quotes1 img {
 		width: 63px;
 	}
 	.playing_quotes1 p {
 		font-size: 10px;
+		margin-top: 13px;
+	}
+	.icon5 img {
+		width: 48px;
+	}
+
+	.icon5 p {
+		font-size: 10px;
+		margin-top: 13px;
+	}
+	.playing_quotes {
+		margin-top: 23px;
 	}
 }
 @media (min-width: 767px) and (max-width: 1023px) {
 	.playing_quotes {
 		width: 97vw;
-		margin-top: -45px;
 	}
 
 	.playing_quotes1 img {
@@ -69,28 +107,26 @@
 	.playing_quotes1 p {
 		font-size: 13px;
 	}
-}
-@media (min-width: 1024px) and (max-width: 1200px) {
-	.playing_quotes {
-		margin-top: -45px;
+	.icon5 img {
+		width: 84px;
 	}
 
+	.icon5 p {
+		font-size: 10px;
+		margin-top: 13px;
+	}
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
 	.playing_quotes1 img {
 		width: 110px;
 	}
-	.playing_quotes1 p {
-		font-size: 18px;
+
+	.icon5 img {
+		width: 86px;
 	}
 }
 @media (min-width: 1201px) and (max-width: 1449px) {
-	.playing_quotes {
-		margin-top: -65px;
-	}
-
 	.playing_quotes1 img {
 		width: 143px;
-	}
-	.playing_quotes1 p {
-		font-size: 20px;
 	}
 }
