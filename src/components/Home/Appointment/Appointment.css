@@ -225,8 +225,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	}
 
 	.appointment_btn {
-		/* margin-left: 0; */
-		margin: auto;
+		margin-left: 24%;
+		/* margin: auto; */
 		width: 122px;
 	}
 	.appointment h5 {
