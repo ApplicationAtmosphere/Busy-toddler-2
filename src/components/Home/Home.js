@@ -14,9 +14,9 @@ const Home = () => {
 			<Playing_qoutes />
 			<ProductSlider />
 			<Appointment />
+			<Instagram />
 			<OurPhilosophy />
 			<OurCreation />
-			<Instagram />
 		</div>
 	);
 };

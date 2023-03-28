@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer2.css";
-import logoImg from "././../../assets/logo2.jpeg";
+import logoImg from "././../../assets/FINALSYMBOL.png";
 import facebook from "./../../assets/icons8-facebook-48.png";
 import instagram from "./../../assets/icons8-instagram-48.png";
 import whatsapp from "./../../assets/whatsappIcon.png";
