@@ -105,7 +105,7 @@ function Appointment() {
 							Phone:
 							<input
 								type="tel"
-								className="text_input_mobile"
+								className="text_input"
 								value={mobile}
 								onChange={handleMobileChange}
 							/>
@@ -125,7 +125,7 @@ function Appointment() {
 							<label>
 								Date:
 								<input
-									className="select_input"
+									className="select_input date-input"
 									type="date"
 									value={selectDate2}
 									onChange={handleDateChange2}

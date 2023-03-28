@@ -99,10 +99,16 @@ label {
 	margin-bottom: 10px;
 	padding: 5px;
 	width: 69%;
-	border-radius: 12px;
-	background-color: #fff;
+}
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
 }
 
+input[type="time"]::-webkit-calendar-picker-indicator {
+	background: none;
+} */
 .checkboxes {
 	display: flex;
 	flex-direction: column;
@@ -168,7 +174,7 @@ label {
 	}
 
 	.appointment h5 {
-		font-size: 15px;
+		font-size: 10px;
 	}
 }
 
@@ -191,6 +197,8 @@ label {
 	}
 
 	.text_label {
+		font-size: 15px;
+		font-weight: 400;
 		display: block;
 		margin-bottom: 10px;
 		text-align: left;
@@ -200,18 +208,22 @@ label {
 		width: 67%;
 		margin-left: 16px;
 	}
-	.text_input_mobile {
-		width: 67%;
-		margin-left: 16px;
-	}
 
 	.select_input {
-		font-size: 14px;
+		font: small-caption;
 		width: 60%;
+	}
+	label {
+		font-size: 15px;
+		font-weight: 400;
 	}
 
 	.appointment_btn {
-		margin-left: 50px;
+		margin-left: 64px;
+		width: 122px;
+	}
+	.appointment h5 {
+		font-size: 15px;
 	}
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -231,10 +243,6 @@ label {
 	}
 
 	.text_input {
-		width: 79%;
-		margin-left: 16px;
-	}
-	.text_input_mobile {
 		width: 79%;
 		margin-left: 16px;
 	}
@@ -274,10 +282,6 @@ label {
 	.text_input {
 		width: 68%;
 		margin-left: 16px;
-	}
-	.text_input_mobile {
-		width: 69%;
-		margin-left: 8px;
 	}
 
 	.select_input {
