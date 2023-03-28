@@ -7,13 +7,17 @@ import p4 from "./../../../assets/product1.jpg";
 import p5 from "./../../../assets/product2.jpg";
 import p6 from "./../../../assets/product3.JPG";
 // import TextUnderline from "../TextUnderline/TextUnderline";
+import insta from "../../../assets/icons8-instagram-48.png";
 
 const Instagram = () => {
 	return (
 		<div className="instagram_section">
 			<div className="instagram_heading">
-				<h2>INSTAGRAM / GALLERY</h2>
-				<div className="instagram_heading_underline">- </div>
+				<h2>
+					GALLERY <img src={insta} alt="insta" />
+					{/* <TextUnderline /> */}
+				</h2>
+				<div className="instagram_heading_underline"> - </div>
 			</div>
 			<div className="instagram_images">
 				<div className="image_div">
@@ -31,7 +35,7 @@ const Instagram = () => {
 						<img src={p3} alt="" />
 					</a>
 				</div>
-				<div className="image_div">
+				{/* <div className="image_div">
 					<a href="https://www.instagram.com/p/CpC76mZAd0B/" target={"_blank"}>
 						<img src={p4} alt="" />
 					</a>
@@ -45,7 +49,7 @@ const Instagram = () => {
 					<a href="https://www.instagram.com/p/CoHi1lZgJXT/" target={"_blank"}>
 						<img src={p6} alt="" />
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

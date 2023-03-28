@@ -47,8 +47,8 @@ const ProductSlider = () => {
 		dots: false,
 		infinite: false,
 		speed: 500,
-		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToShow: 3,
+		slidesToScroll: 3,
 		initialSlide: 0,
 		responsive: [
 			{
@@ -56,6 +56,15 @@ const ProductSlider = () => {
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
+					infinite: true,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
 					infinite: true,
 					dots: true,
 				},
@@ -88,10 +97,16 @@ const ProductSlider = () => {
 			<Slider {...settings}>
 				{allProducts.products.map((slide, index) => (
 					<div key={index}>
-						<ProductCard imgSrc={slide.image} id={slide.id} />
+						<ProductCard
+							title={slide.title}
+							imgSrc={slide.image}
+							id={slide.id}
+							price={slide.price}
+						/>
 					</div>
 				))}
 			</Slider>
+			<p className="t_and_c">*T&C APPLY</p>
 		</div>
 	);
 };

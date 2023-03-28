@@ -2,7 +2,7 @@ export const allProducts = {
 	products: [
 		{
 			id: 1,
-			title: "Rainbow Bouncy",
+			title: "Rainbow Toddler's Play Area 1",
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
@@ -11,7 +11,7 @@ export const allProducts = {
 		},
 		{
 			id: 2,
-			title: "White Castle Bouncy",
+			title: "Ball Pool + Double Slide(BPS2)",
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",
@@ -20,7 +20,7 @@ export const allProducts = {
 		},
 		{
 			id: 3,
-			title: "Ball Pool",
+			title: "White Castle Bouncy",
 			price: 18999,
 			description:
 				"Rental break up (4hrs) ₹18,999/- +taxes. We provide carefully designed, portable play areas at your door-step, on rent for infants, toddlers and children. We commit to keeping your little one productively busy. Be it at a wedding, office party or birthday. We believe in spreading joy and encourage play at every step. We also provide other entertainment activities to fulfill your desired-event! We also offer personalization , decoration, activities, games, artists, photographer and lots more as per your requirement",

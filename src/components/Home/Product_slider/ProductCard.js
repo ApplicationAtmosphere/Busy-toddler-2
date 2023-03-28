@@ -11,12 +11,16 @@ const ProductCard = (props) => {
 		const item = allProducts.products[id - 1];
 		dispatch(addCart(item));
 	};
+
+	const title = props.title;
+	let titleCaps = title.toUpperCase();
+
 	return (
 		<>
 			<Card style={{ width: "inherit" }}>
 				<Card>
 					<div className="product_card_heading">
-						<p>RAINBOW TODDLER’S PLAY AREA 1</p>
+						<p>{titleCaps}</p>
 					</div>
 				</Card>
 				<NavLink to={`/products/${props.id}`}>
@@ -24,7 +28,7 @@ const ProductCard = (props) => {
 				</NavLink>
 				<Card>
 					<div className="product-actions">
-						{/* <p>$3000</p> */}
+						<p>₹{props.price}/- </p>
 						<NavLink to="/cart">
 							<button
 								onClick={() => addProduct(props.id)}

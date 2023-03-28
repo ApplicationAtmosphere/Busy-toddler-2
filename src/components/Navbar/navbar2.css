@@ -1,11 +1,15 @@
 .aTag {
-	color: -webkit-link;
+	color: #000000;
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
 	margin: auto 62px;
+}
+
+.aTag:hover {
+	color: #000000;
 }
 .bg-light {
 	--bs-bg-opacity: 0;
@@ -25,6 +29,17 @@ nav {
 	top: 0;
 	left: 36%;
 	position: absolute;
+}
+
+.logoText_img {
+	display: flex;
+	width: 94vw;
+	align-items: center;
+	justify-content: center;
+}
+
+.logoText_img img {
+	width: 300px;
 }
 
 .navbar-toggler {
@@ -52,7 +67,15 @@ nav {
 		position: unset;
 		right: 0px;
 	}
+
+	.logoText_img {
+		justify-content: flex-start;
+	}
+	.logoText_img img {
+		width: 100px;
+	}
 }
+
 @media (min-width: 768px) {
 	.lg_img {
 		display: none;
@@ -86,5 +109,8 @@ nav {
 	}
 	.lg_img {
 		display: none;
+	}
+	.logoText_img {
+		width: 100vw;
 	}
 }
