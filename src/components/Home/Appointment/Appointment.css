@@ -105,8 +105,9 @@ label {
 
 .checkboxes {
 	display: flex;
+	flex-direction: column;
 	margin-bottom: 20px;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 }
 
@@ -140,11 +141,6 @@ label {
 	.calendar {
 		padding: 22px 0;
 		width: 90%;
-	}
-
-	.checkboxes {
-		flex-direction: column;
-		justify-content: center;
 	}
 
 	.text_label {
@@ -194,15 +190,6 @@ label {
 		width: 90%;
 	}
 
-	/* appointment div {
-		margin-left: 114px;
-	} */
-
-	.checkboxes {
-		flex-direction: row;
-		justify-content: center;
-	}
-
 	.text_label {
 		display: block;
 		margin-bottom: 10px;
@@ -210,11 +197,11 @@ label {
 	}
 
 	.text_input {
-		width: 79%;
+		width: 67%;
 		margin-left: 16px;
 	}
 	.text_input_mobile {
-		width: 79%;
+		width: 67%;
 		margin-left: 16px;
 	}
 
@@ -235,11 +222,6 @@ label {
 		flex-direction: column;
 		align-items: center;
 		margin: 0 20px;
-	}
-
-	.checkboxes {
-		flex-direction: row;
-		align-items: center;
 	}
 
 	.text_label {
