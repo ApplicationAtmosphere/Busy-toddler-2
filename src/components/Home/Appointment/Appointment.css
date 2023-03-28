@@ -160,7 +160,7 @@ label {
 
 	.select_input {
 		font-size: 10px;
-		width: 89%;
+		width: 60%;
 	}
 
 	.appointment_btn {
@@ -207,7 +207,7 @@ label {
 
 	.select_input {
 		font-size: 14px;
-		width: 89%;
+		width: 60%;
 	}
 
 	.appointment_btn {
@@ -241,7 +241,7 @@ label {
 
 	.select_input {
 		font-size: 15px;
-		width: 100%;
+		width: 60%;
 	}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
