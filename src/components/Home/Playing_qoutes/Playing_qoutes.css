@@ -58,17 +58,18 @@
 }
 @media (min-width: 320px) and (max-width: 480px) {
 	.playing_quotes1 img {
-		width: 52px;
+		width: 49px;
 	}
 	.playing_quotes1 p {
 		font-size: 9px;
 		margin-top: 10px;
 	}
 	.icon5 img {
-		width: 43px;
+		width: 38px;
 	}
 
 	.icon5 p {
+		margin-top: 10px;
 		font-size: 9px;
 	}
 	.playing_quotes {
