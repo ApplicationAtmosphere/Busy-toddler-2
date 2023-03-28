@@ -60,12 +60,16 @@
 }
 
 .text_input {
+	outline: none;
+	border: none;
 	margin-left: 33px;
 	height: 30px;
-	border-radius: 12px;
+	/* border-radius: 12px; */
 }
 
 .text_input_mobile {
+	outline: none;
+	border: none;
 	margin-left: 28px;
 	height: 30px;
 	border-radius: 12px;
@@ -89,9 +93,12 @@ label {
 }
 
 .select_input {
+	font: menu;
+	outline: none;
+	border: none;
 	margin-bottom: 10px;
 	padding: 5px;
-	width: 119%;
+	width: 69%;
 	border-radius: 12px;
 	background-color: #fff;
 }
