@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
-import logo from "./../../assets/FINALSYMBOL.png";
+import logo from "./../../assets/logo.jpg";
 import logoText from "./../../assets/nav2.png";
 import "./navbar2.css";
 
@@ -18,7 +18,7 @@ function Navbar2() {
 					alignItems: "center",
 					justifyContent: "space-between",
 				}}>
-				<Container>
+				<Container className="nav">
 					<Navbar.Brand href="#home">
 						<img className="lg_img" src={logo} alt="logo" />
 						<img className="logoText_sm" src={logoText} alt="logoText" />
@@ -32,9 +32,9 @@ function Navbar2() {
 							<NavLink className="aTag" to="/">
 								WHAT WE DO{" "}
 							</NavLink>
-							<img className="sm_img" src={logo} alt="logo" />
+							<a href="/"><img className="sm_img" src={logo} alt="logo" /></a>
 							<NavLink className="aTag" to="/services">
-								OUR SERVICES{" "}
+								OUR PRODUCTS{" "}
 							</NavLink>
 							<NavLink className="aTag" to="/appointment">
 								BOOK NOW{" "}
@@ -43,9 +43,9 @@ function Navbar2() {
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
-			<div className="logoText_img">
+			{/* <div className="logoText_img">
 				<img src={logoText} alt="logoText" />
-			</div>
+			</div> */}
 		</>
 	);
 }
