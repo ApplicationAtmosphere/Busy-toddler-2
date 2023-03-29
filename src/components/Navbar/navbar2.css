@@ -1,158 +1,37 @@
-.aTag {
-	color: #000000;
-	cursor: pointer;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: 700;
-	text-align: center;
-	margin: auto 62px;
-}
+import React from "react";
+import "./Playing_qoutes.css";
+import icon1 from "./../../../assets/1.png";
+import icon2 from "./../../../assets/2.png";
+import icon3 from "./../../../assets/3.png";
+import icon4 from "./../../../assets/4.png";
+import icon5 from "./../../../assets/5.png";
 
-.aTag:hover {
-	color: #ffc300;
-	color: #0000ff;
-}
-.bg-light {
-	--bs-bg-opacity: 0;
-	background-color: #fff;
-}
+const Playing_qoutes = () => {
+	return (
+		<div className="playing_quotes">
+			<div className="playing_quotes1">
+				<img src={icon1} alt="icon1" />
+				<p>PLAY AREA AT YOUR DOOR STEP</p>
+			</div>
+			<div className="playing_quotes1">
+				<img src={icon2} alt="icon2" />
+				<p>CAREFULLY DESIGNED AND CURATED</p>
+			</div>
+			<div className="playing_quotes1">
+				<img src={icon3} alt="icon3" />
+				<p>PROMOTES CHILD DEVELOPMENT</p>
+			</div>
+			<div className="playing_quotes1">
+				<img src={icon4} alt="icon4" />
+				<p>SPIC AND SPAN, CHILDREN’S SAFETY IS OUR PRIORITY</p>
+			</div>
+			{/* <div className="icon5"> */}
+			<div className="playing_quotes1">
+				<img src={icon5} alt="icon5" />
+				<p>ONE-STOP-SHOP FOR CHILDREN’S ENTERTAINMENT</p>
+			</div>
+		</div>
+	);
+};
 
-.sm_img {
-	width: 144px;
-	height: auto;
-	margin: auto;
-}
-
-.logoText_sm {
-	display: none;
-}
-
-nav {
-	margin-left: 24px;
-}
-.lg_img {
-	top: 0;
-	left: 36%;
-	position: absolute;
-}
-
-.logoText_img {
-	height: 55px;
-	display: flex;
-	margin-top: -12px;
-	align-items: center;
-	justify-content: center;
-}
-
-.logoText_img img {
-	/* margin-top: -52px; */
-	width: 252px;
-	/* margin-left: -89px; */
-}
-
-.navbar-toggler {
-	padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-	font-size: var(--bs-navbar-toggler-font-size);
-	line-height: 1;
-	color: var(--bs-navbar-color);
-	background-color: transparent;
-	border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-	/* border-radius: var(--bs-navbar-toggler-border-radius); */
-	transition: var(--bs-navbar-toggler-transition);
-	border: none;
-}
-
-@media screen and (max-width: 767px) {
-	.sm_img {
-		display: none;
-	}
-	.lg_img {
-		width: auto;
-		height: 51px;
-		left: 0px;
-	}
-	.navbar-toggler-icon {
-		position: unset;
-		right: 0px;
-	}
-
-	.logoText_img {
-		margin-top: -60px;
-		justify-content: flex-start;
-	}
-	.logoText_img img {
-		display: none;
-		width: 100px;
-	}
-	.logoText_sm {
-		margin-top: 26px;
-		display: inline;
-		width: 85px;
-		margin-left: -32px;
-	}
-}
-
-@media (min-width: 768px) {
-	.lg_img {
-		display: none;
-	}
-
-	.navbar-expand-md .navbar-nav {
-		margin-left: 61px;
-		flex-direction: row;
-	}
-	.navbar > .container {
-		margin: auto;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-	.navbar-expand-md .navbar-nav .nav-link {
-		padding-right: 0rem;
-		padding-left: 0rem;
-	}
-	.navbar-expand-md .navbar-nav {
-		margin-left: -6px;
-		justify-content: space-between;
-		flex-direction: row;
-	}
-
-	.aTag {
-		font-size: 14px;
-		margin: auto 22px;
-	}
-
-	.lg_img {
-		display: none;
-	}
-	.logoText_sm {
-		display: none;
-	}
-
-	.sm_img {
-		width: 154px;
-	}
-	.logoText_img img {
-		/* margin-top: -52px; */
-		width: 236px;
-		margin-left: -41px;
-	}
-	.icon5 img {
-		width: 78px;
-	}
-}
-@media (min-width: 1024px) and (max-width: 1249px) {
-	.aTag {
-		font-size: 15px;
-		margin: auto 44px;
-	}
-	.lg_img {
-		display: none;
-	}
-	.logoText_img {
-		width: 100vw;
-	}
-	.logoText_sm {
-		display: none;
-	}
-}
+export default Playing_qoutes;
