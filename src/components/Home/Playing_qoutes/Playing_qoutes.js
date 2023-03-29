@@ -11,23 +11,24 @@ const Playing_qoutes = () => {
 		<div className="playing_quotes">
 			<div className="playing_quotes1">
 				<img src={icon1} alt="icon1" />
-				<p>PLAY AREA AT YOUR LOCATION</p>
+				<p>PLAY AREA AT YOUR DOOR STEP</p>
 			</div>
 			<div className="playing_quotes1">
 				<img src={icon2} alt="icon2" />
-				<p>CAREFULLY DESIGNED & CURATED</p>
+				<p>CAREFULLY DESIGNED AND CURATED</p>
 			</div>
 			<div className="playing_quotes1">
 				<img src={icon3} alt="icon3" />
-				<p>GREAT FOR CHILD DEVELOPMENT</p>
+				<p>PROMOTES CHILD DEVELOPMENT</p>
 			</div>
 			<div className="playing_quotes1">
 				<img src={icon4} alt="icon4" />
-				<p>CHILDREN’S SAFETY IS OUR PRIORITY</p>
+				<p>SPIC AND SPAN, CHILDREN’S SAFETY IS OUR PRIORITY</p>
 			</div>
-			<div className="icon5">
+			{/* <div className="icon5"> */}
+			<div className="playing_quotes1">
 				<img src={icon5} alt="icon5" />
-				<p>ONE STOP SHOP FOR PARTY PLANNING</p>
+				<p>ONE-STOP-SHOP FOR CHILDREN’S ENTERTAINMENT</p>
 			</div>
 		</div>
 	);
