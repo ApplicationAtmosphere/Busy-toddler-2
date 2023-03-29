@@ -9,7 +9,8 @@
 }
 
 .aTag:hover {
-	color: #000000;
+	color: #ffc300;
+	color: #0000ff;
 }
 .bg-light {
 	--bs-bg-opacity: 0;
@@ -17,7 +18,7 @@
 }
 
 .sm_img {
-	width: 200px;
+	width: 144px;
 	height: auto;
 	margin: auto;
 }
@@ -45,7 +46,7 @@ nav {
 
 .logoText_img img {
 	/* margin-top: -52px; */
-	width: 300px;
+	width: 252px;
 	/* margin-left: -89px; */
 }
 
