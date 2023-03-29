@@ -1,5 +1,6 @@
 .main_appointment {
-	margin: 50px 6%;
+	margin: 0 6%;
+	margin-top: 70px;
 }
 
 .all_items {
@@ -104,15 +105,7 @@ label {
 	background-color: #fafafa;
 	margin-left: 30px;
 }
-/* input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-	display: none;
-	-webkit-appearance: none;
-}
 
-input[type="time"]::-webkit-calendar-picker-indicator {
-	background: none;
-} */
 .checkboxes {
 	display: flex;
 	flex-direction: column;
@@ -267,7 +260,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 		margin-top: 0px;
 	}
 	.main_appointment {
-		margin: 50px 4%;
+		margin: 0 4%;
+		margin-top: 100px;
 	}
 	.appointment h5 {
 		margin-top: 19px;

@@ -1,5 +1,5 @@
 .slider_main {
-	margin-top: 300px;
+	margin-top: 320px;
 }
 .slick-track {
 	display: flex;
@@ -146,7 +146,7 @@
 
 @media (max-width: 320px) {
 	.slider_main {
-		margin-top: 160px;
+		/* margin-top: 160px; */
 	}
 	.product_heading {
 		font-size: 21px;
@@ -178,24 +178,16 @@
 		font-size: 14px;
 		width: 111px;
 		height: 35px;
-		/* margin-left: 56%; */
 	}
 	.product_card_heading p {
 		font-size: 16px;
 	}
-
-	.product-actions {
-		/* padding-left: 2%; */
-	}
-	.product-actions p {
-		/* margin-left: 7%; */
-	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-	/* .slider_main {
-		margin-top: 107px;
-	} */
+	.slider_main {
+		margin-top: 215px;
+	}
 	.slick-slide img {
 		height: 244px;
 	}

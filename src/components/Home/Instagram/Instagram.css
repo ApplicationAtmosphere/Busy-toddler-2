@@ -4,9 +4,8 @@
 	flex-direction: column;
 	justify-content: center;
 	border: 1px solid black;
-	/* height: 100vh; */
-	margin: 8% 6%;
-	margin-top: 150px;
+	margin: 0 6%;
+	margin-top: 165px;
 }
 
 .instagram_heading {
@@ -85,6 +84,9 @@
 	.instagram_heading_underline {
 		width: 184px;
 	}
+	.instagram_section a video {
+		height: 180px;
+	}
 }
 @media (min-width: 324px) and (max-width: 480px) {
 	.image_div {
@@ -98,8 +100,8 @@
 	}
 	.instagram_section {
 		margin-right: 4%;
-		margin-top: 34%;
-		margin-bottom: 19%;
+		/* margin-top: 34%; */
+		/* margin-bottom: 19%; */
 	}
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -114,6 +116,22 @@
 		width: 169px;
 		margin-left: 44px;
 		height: 245px;
+	}
+	.instagram_section a img {
+		height: 217px;
+	}
+	.instagram_images {
+		padding-top: 7%;
+		padding-bottom: 0;
+	}
+}
+@media (min-width: 992px) and (max-width: 1249px) {
+	.image_div {
+		/* width: 222px;
+		margin-left: 39px; */
+		width: 224px;
+		margin-left: 44px;
+		height: 299px px;
 	}
 	.instagram_section a img {
 		height: 217px;

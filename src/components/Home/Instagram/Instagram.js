@@ -24,19 +24,19 @@ const Instagram = () => {
 			</div>
 			<div className="instagram_images">
 				<div className="image_div">
-					<a href="https://www.instagram.com/p/CqE99XMpNfn/" target={"_blank"}>
+					<a href="https://www.instagram.com/p/CqE99XMpNfn/">
 						{/* <img src={p1} alt="" /> */}
 						<video controls src={v1}></video>
 					</a>
 				</div>
 				<div className="image_div">
-					<a href="https://www.instagram.com/p/CpW5rJTgLsu/" target={"_blank"}>
+					<a href="https://www.instagram.com/reel/CpW5rJTgLsu/?utm_source=ig_web_copy_link">
 						{/* <img src={p2} alt="" /> */}
 						<video controls src={v2}></video>
 					</a>
 				</div>
 				<div className="image_div">
-					<a href="https://www.instagram.com/p/CpJu8FrAF2z/" target={"_blank"}>
+					<a href="https://www.instagram.com/reel/Chy-7pQgkAh/?igshid=YmMyMTA2M2Y=">
 						{/* <img src={p3} alt="" /> */}
 						<video controls src={v3}></video>
 					</a>
